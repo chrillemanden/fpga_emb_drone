@@ -17,8 +17,8 @@
         "axi_bram_ctrl_0": "",
         "axi_bram_ctrl_0_bram": ""
       },
-      "Controller_0": "",
-      "xlconstant_0": ""
+      "xlconstant_0": "",
+      "Controller_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1920,6 +1920,15 @@
           }
         }
       },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_0",
+        "parameters": {
+          "CONST_WIDTH": {
+            "value": "8"
+          }
+        }
+      },
       "Controller_0": {
         "vlnv": "xilinx.com:module_ref:Controller:1.0",
         "xci_name": "design_1_Controller_0_0",
@@ -1976,15 +1985,6 @@
             "right": "0"
           }
         }
-      },
-      "xlconstant_0": {
-        "vlnv": "xilinx.com:ip:xlconstant:1.1",
-        "xci_name": "design_1_xlconstant_0_0",
-        "parameters": {
-          "CONST_WIDTH": {
-            "value": "8"
-          }
-        }
       }
     },
     "interface_nets": {
@@ -2029,15 +2029,15 @@
       "clk_0_1": {
         "ports": [
           "clk",
-          "Controller_0/clk",
-          "PS_BRAM/BRAM_PORTB_0_clk"
+          "PS_BRAM/BRAM_PORTB_0_clk",
+          "Controller_0/clk"
         ]
       },
       "rst_0_1": {
         "ports": [
           "rst",
-          "Controller_0/rst",
-          "PS_BRAM/BRAM_PORTB_0_rst"
+          "PS_BRAM/BRAM_PORTB_0_rst",
+          "Controller_0/rst"
         ]
       },
       "xlconstant_0_dout": {

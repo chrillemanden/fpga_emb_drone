@@ -1,0 +1,199 @@
+11:39:13 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\Bruger\Documents\fpga_emb_drone\Vitis\temp_xsdb_launch_script.tcl
+11:39:13 INFO  : Registering command handlers for Vitis TCF services
+11:39:15 INFO  : XSCT server has started successfully.
+11:39:15 INFO  : Successfully done setting XSCT server connection channel  
+11:39:15 INFO  : plnx-install-location is set to ''
+11:39:15 INFO  : Successfully done setting workspace for the tool. 
+11:39:15 INFO  : Successfully done query RDI_DATADIR 
+11:39:16 INFO  : Platform repository initialization has completed.
+11:40:17 INFO  : Result from executing command 'getProjects': drone_PS
+11:40:17 INFO  : Result from executing command 'getPlatforms': 
+11:42:33 INFO  : Result from executing command 'getProjects': drone_PS
+11:42:33 INFO  : Result from executing command 'getPlatforms': drone_PS|C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/drone_PS.xpfm
+11:42:33 INFO  : Checking for BSP changes to sync application flags for project 'drone_PS_APP'...
+11:42:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:42:53 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:42:53 INFO  : 'jtag frequency' command is executed.
+11:42:53 INFO  : Context for 'APU' is selected.
+11:42:53 INFO  : System reset is completed.
+11:42:56 INFO  : 'after 3000' command is executed.
+11:42:56 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:42:59 INFO  : FPGA configured successfully with bitstream "C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit"
+11:42:59 INFO  : Context for 'APU' is selected.
+11:42:59 INFO  : Hardware design and registers information is loaded from 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa'.
+11:42:59 INFO  : 'configparams force-mem-access 1' command is executed.
+11:42:59 INFO  : Context for 'APU' is selected.
+11:42:59 INFO  : Sourcing of 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl' is done.
+11:42:59 INFO  : 'ps7_init' command is executed.
+11:42:59 INFO  : 'ps7_post_config' command is executed.
+11:42:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:00 INFO  : The application 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:43:00 INFO  : 'configparams force-mem-access 0' command is executed.
+11:43:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:43:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:43:00 INFO  : 'con' command is executed.
+11:43:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:43:00 INFO  : Launch script is exported to file 'C:\Users\Bruger\Documents\fpga_emb_drone\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_drone_ps_app_system_standalone.tcl'
+11:47:08 INFO  : Checking for BSP changes to sync application flags for project 'drone_PS_APP'...
+11:47:21 INFO  : Disconnected from the channel tcfchan#3.
+11:47:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:47:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:47:23 INFO  : 'jtag frequency' command is executed.
+11:47:23 INFO  : Context for 'APU' is selected.
+11:47:23 INFO  : System reset is completed.
+11:47:26 INFO  : 'after 3000' command is executed.
+11:47:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:47:28 INFO  : FPGA configured successfully with bitstream "C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit"
+11:47:28 INFO  : Context for 'APU' is selected.
+11:47:28 INFO  : Hardware design and registers information is loaded from 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa'.
+11:47:28 INFO  : 'configparams force-mem-access 1' command is executed.
+11:47:28 INFO  : Context for 'APU' is selected.
+11:47:28 INFO  : Sourcing of 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl' is done.
+11:47:29 INFO  : 'ps7_init' command is executed.
+11:47:29 INFO  : 'ps7_post_config' command is executed.
+11:47:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:29 INFO  : The application 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:47:29 INFO  : 'configparams force-mem-access 0' command is executed.
+11:47:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:47:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:47:29 INFO  : 'con' command is executed.
+11:47:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:47:29 INFO  : Launch script is exported to file 'C:\Users\Bruger\Documents\fpga_emb_drone\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_drone_ps_app_system_1_standalone.tcl'
+11:48:34 INFO  : Checking for BSP changes to sync application flags for project 'drone_PS_APP'...
+11:48:45 INFO  : Disconnected from the channel tcfchan#5.
+11:48:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:48:47 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:48:47 INFO  : 'jtag frequency' command is executed.
+11:48:47 INFO  : Context for 'APU' is selected.
+11:48:47 INFO  : System reset is completed.
+11:48:50 INFO  : 'after 3000' command is executed.
+11:48:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:48:52 INFO  : FPGA configured successfully with bitstream "C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit"
+11:48:52 INFO  : Context for 'APU' is selected.
+11:48:52 INFO  : Hardware design and registers information is loaded from 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa'.
+11:48:52 INFO  : 'configparams force-mem-access 1' command is executed.
+11:48:52 INFO  : Context for 'APU' is selected.
+11:48:52 INFO  : Sourcing of 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl' is done.
+11:48:53 INFO  : 'ps7_init' command is executed.
+11:48:53 INFO  : 'ps7_post_config' command is executed.
+11:48:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:53 INFO  : The application 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:48:53 INFO  : 'configparams force-mem-access 0' command is executed.
+11:48:53 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:48:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:48:53 INFO  : 'con' command is executed.
+11:48:53 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:48:53 INFO  : Launch script is exported to file 'C:\Users\Bruger\Documents\fpga_emb_drone\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_drone_ps_app_system_2_standalone.tcl'
+11:58:00 INFO  : Checking for BSP changes to sync application flags for project 'drone_PS_APP'...
+11:58:16 INFO  : Disconnected from the channel tcfchan#7.
+11:58:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:58:18 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+11:58:18 INFO  : 'jtag frequency' command is executed.
+11:58:18 INFO  : Context for 'APU' is selected.
+11:58:18 INFO  : System reset is completed.
+11:58:21 INFO  : 'after 3000' command is executed.
+11:58:21 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+11:58:23 INFO  : FPGA configured successfully with bitstream "C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit"
+11:58:23 INFO  : Context for 'APU' is selected.
+11:58:23 INFO  : Hardware design and registers information is loaded from 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa'.
+11:58:23 INFO  : 'configparams force-mem-access 1' command is executed.
+11:58:24 INFO  : Context for 'APU' is selected.
+11:58:24 INFO  : Sourcing of 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl' is done.
+11:58:24 INFO  : 'ps7_init' command is executed.
+11:58:24 INFO  : 'ps7_post_config' command is executed.
+11:58:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:24 INFO  : The application 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:58:24 INFO  : 'configparams force-mem-access 0' command is executed.
+11:58:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/bitstream/drone_FPGA.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/hw/drone_FPGA.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP/Debug/drone_PS_APP.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:58:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:58:24 INFO  : 'con' command is executed.
+11:58:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:58:24 INFO  : Launch script is exported to file 'C:\Users\Bruger\Documents\fpga_emb_drone\Vitis\.sdk\launch_scripts\single_application_debug\systemdebugger_drone_ps_app_system_3_standalone.tcl'

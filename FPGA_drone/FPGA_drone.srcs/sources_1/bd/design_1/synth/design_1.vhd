@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Tue Nov 10 11:14:33 2020
+--Date        : Tue Nov 10 11:50:24 2020
 --Host        : MSI running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -659,6 +659,11 @@ entity design_1 is
 end design_1;
 
 architecture STRUCTURE of design_1 is
+  component design_1_xlconstant_0_0 is
+  port (
+    dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
+  );
+  end component design_1_xlconstant_0_0;
   component design_1_Controller_0_0 is
   port (
     SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -671,11 +676,6 @@ architecture STRUCTURE of design_1 is
     led : out STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1_Controller_0_0;
-  component design_1_xlconstant_0_0 is
-  port (
-    dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
-  );
-  end component design_1_xlconstant_0_0;
   signal Controller_0_addr : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Controller_0_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Controller_0_en : STD_LOGIC;

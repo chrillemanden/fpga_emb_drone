@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 10 11:16:24 2020
+// Date        : Tue Nov 10 11:51:18 2020
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.v
@@ -73,30 +73,30 @@ module design_1_Controller_0_0
   assign addr[2] = \<const1> ;
   assign addr[1] = \<const0> ;
   assign addr[0] = \<const0> ;
-  assign dout[31] = \<const0> ;
-  assign dout[30] = \<const0> ;
-  assign dout[29] = \<const0> ;
-  assign dout[28] = \<const0> ;
-  assign dout[27] = \<const0> ;
-  assign dout[26] = \<const0> ;
-  assign dout[25] = \<const0> ;
-  assign dout[24] = \<const0> ;
-  assign dout[23] = \<const0> ;
-  assign dout[22] = \<const0> ;
-  assign dout[21] = \<const0> ;
-  assign dout[20] = \<const0> ;
-  assign dout[19] = \<const0> ;
-  assign dout[18] = \<const0> ;
-  assign dout[17] = \<const0> ;
-  assign dout[16] = \<const0> ;
-  assign dout[15] = \<const0> ;
-  assign dout[14] = \<const0> ;
-  assign dout[13] = \<const0> ;
-  assign dout[12] = \<const0> ;
-  assign dout[11] = \<const0> ;
-  assign dout[10] = \<const0> ;
-  assign dout[9] = \<const0> ;
-  assign dout[8] = \<const0> ;
+  assign dout[31] = \<const1> ;
+  assign dout[30] = \<const1> ;
+  assign dout[29] = \<const1> ;
+  assign dout[28] = \<const1> ;
+  assign dout[27] = \<const1> ;
+  assign dout[26] = \<const1> ;
+  assign dout[25] = \<const1> ;
+  assign dout[24] = \<const1> ;
+  assign dout[23] = \<const1> ;
+  assign dout[22] = \<const1> ;
+  assign dout[21] = \<const1> ;
+  assign dout[20] = \<const1> ;
+  assign dout[19] = \<const1> ;
+  assign dout[18] = \<const1> ;
+  assign dout[17] = \<const1> ;
+  assign dout[16] = \<const1> ;
+  assign dout[15] = \<const1> ;
+  assign dout[14] = \<const1> ;
+  assign dout[13] = \<const1> ;
+  assign dout[12] = \<const1> ;
+  assign dout[11] = \<const1> ;
+  assign dout[10] = \<const1> ;
+  assign dout[9] = \<const1> ;
+  assign dout[8] = \<const1> ;
   assign dout[7:0] = \^dout [7:0];
   assign led[3] = \<const0> ;
   assign led[2] = \<const0> ;

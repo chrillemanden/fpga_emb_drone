@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"1.25",
-   "Default View_TopLeft":"-414,-77",
+   "Default View_TopLeft":"-414,-75",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -10,8 +10,8 @@ preplace port FIXED_IO -pg 1 -lvl 4 -x 490 -y 240 -defaultsOSRD
 preplace port clk -pg 1 -lvl 0 -x -350 -y 190 -defaultsOSRD
 preplace port rst -pg 1 -lvl 0 -x -350 -y 220 -defaultsOSRD
 preplace inst PS_BRAM -pg 1 -lvl 3 -x 310 -y 230 -defaultsOSRD
-preplace inst Controller_0 -pg 1 -lvl 2 -x -20 -y 200 -defaultsOSRD
 preplace inst xlconstant_0 -pg 1 -lvl 1 -x -240 -y -40 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 2 -x -20 -y 200 -defaultsOSRD
 preplace netloc Controller_0_en 1 2 1 150 160n
 preplace netloc Controller_0_we 1 2 1 110 180n
 preplace netloc Controller_0_dout 1 2 1 130 200n

@@ -49,7 +49,7 @@ begin
             addr <= x"40_00_00_04";
             we <= "0000";
             dout(7 downto 0) <= SPI_data;
-            dout(31 downto 8) <= (others => '0');
+            dout(31 downto 8) <= (others => '1');
             en <= '1';
         
         end if;

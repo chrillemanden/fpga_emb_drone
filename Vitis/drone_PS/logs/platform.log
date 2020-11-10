@@ -1,0 +1,2462 @@
+TRACE::2020-11-10.11:39:59::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:39:59::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:39:59::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:01::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:01::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:01::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:01::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-11-10.11:40:04::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2020-11-10.11:40:04::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS"
+		}]
+}
+TRACE::2020-11-10.11:40:04::SCWPlatform::Boot application domains not present, creating them
+TRACE::2020-11-10.11:40:04::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-10.11:40:04::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-10.11:40:04::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:04::SCWPlatform::Boot application domain added for zynq_fsbl
+TRACE::2020-11-10.11:40:04::SCWPlatform::Generating the sources  .
+TRACE::2020-11-10.11:40:04::SCWBDomain::Generating boot domain sources.
+TRACE::2020-11-10.11:40:04::SCWBDomain:: Generating the zynq_fsbl Application.
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:04::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:04::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:04::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-11-10.11:40:04::SCWMssOS::No sw design opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::mss does not exists at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::Creating sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::Adding the swdes entry, created swdb C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::Writing mss at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:04::SCWMssOS::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-11-10.11:40:04::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-10.11:40:04::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-10.11:40:04::SCWBDomain::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-11-10.11:40:14::SCWPlatform::Generating sources Done.
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss||
+
+KEYINFO::2020-11-10.11:40:14::SCWMssOS::Could not open the swdb for C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+KEYINFO::2020-11-10.11:40:14::SCWMssOS::Could not open the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss is not found
+
+TRACE::2020-11-10.11:40:14::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-10.11:40:14::SCWMssOS::No sw design opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::mss exists loading the mss file  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Opened the sw design from mss  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Adding the swdes entry C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-11-10.11:40:14::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-10.11:40:14::SCWMssOS::Opened the sw design.  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:14::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:14::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:14::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:14::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:14::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"zynq_fsbl",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-10.11:40:14::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-10.11:40:14::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-10.11:40:14::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:14::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:14::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:14::SCWMssOS::No sw design opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::mss does not exists at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Creating sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Adding the swdes entry, created swdb C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Writing mss at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:14::SCWMssOS::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-10.11:40:14::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-10.11:40:14::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2020-11-10.11:40:14::SCWMssOS::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-10.11:40:14::SCWMssOS::Forcing BSP Sources regeneration.
+TRACE::2020-11-10.11:40:16::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:16::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:16::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:16::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:16::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:16::SCWMssOS::Running validate of swdbs.
+KEYINFO::2020-11-10.11:40:16::SCWMssOS::Could not open the swdb for C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+KEYINFO::2020-11-10.11:40:16::SCWMssOS::Could not open the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2020-11-10.11:40:16::SCWMssOS::Cleared the swdb table entry
+TRACE::2020-11-10.11:40:16::SCWMssOS::Adding the swdes entry, mss present, able to open swdb C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-10.11:40:17::SCWMssOS::Writing the mss file completed C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2020-11-10.11:40:17::SCWPlatform::Started generating the artifacts platform drone_PS
+TRACE::2020-11-10.11:40:17::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-11-10.11:40:17::SCWPlatform::Started generating the artifacts for system configuration drone_PS
+LOG::2020-11-10.11:40:17::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-11-10.11:40:17::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-11-10.11:40:17::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-11-10.11:40:17::SCWDomain::Skipping the build for domain :  zynq_fsbl
+LOG::2020-11-10.11:40:17::SCWSystem::Checking the domain standalone_domain
+LOG::2020-11-10.11:40:17::SCWSystem::Not a boot domain 
+LOG::2020-11-10.11:40:17::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-11-10.11:40:17::SCWDomain::Generating domain artifcats
+TRACE::2020-11-10.11:40:17::SCWMssOS::Generating standalone artifcats
+TRACE::2020-11-10.11:40:17::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/sw/drone_PS/qemu/
+TRACE::2020-11-10.11:40:17::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/sw/drone_PS/standalone_domain/qemu/
+TRACE::2020-11-10.11:40:17::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-10.11:40:17::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-11-10.11:40:17::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-11-10.11:40:17::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2020-11-10.11:40:17::SCWMssOS::skipping the bsp build ... 
+TRACE::2020-11-10.11:40:17::SCWMssOS::Copying to export directory.
+TRACE::2020-11-10.11:40:17::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-11-10.11:40:17::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2020-11-10.11:40:17::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2020-11-10.11:40:17::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-11-10.11:40:17::SCWSystem::Completed Processing the sysconfig drone_PS
+LOG::2020-11-10.11:40:17::SCWPlatform::Completed generating the artifacts for system configuration drone_PS
+TRACE::2020-11-10.11:40:17::SCWPlatform::Started preparing the platform 
+TRACE::2020-11-10.11:40:17::SCWSystem::Writing the bif file for system config drone_PS
+TRACE::2020-11-10.11:40:17::SCWSystem::dir created 
+TRACE::2020-11-10.11:40:17::SCWSystem::Writing the bif 
+TRACE::2020-11-10.11:40:17::SCWPlatform::Started writing the spfm file 
+TRACE::2020-11-10.11:40:17::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-11-10.11:40:17::SCWPlatform::Completed generating the platform
+TRACE::2020-11-10.11:40:17::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-11-10.11:40:17::SCWPlatform::updated the xpfm file.
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:17::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:17::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:17::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:17::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:17::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:17::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone_domain",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:18::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:18::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:18::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:18::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-10.11:40:19::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:19::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:19::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:19::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:19::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:19::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2020-11-10.11:40:19::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:19::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:19::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:19::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"ps7_cortexa9_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2020-11-10.11:40:20::SCWPlatform::Clearing the existing platform
+TRACE::2020-11-10.11:40:20::SCWSystem::Clearing the existing sysconfig
+TRACE::2020-11-10.11:40:20::SCWBDomain::clearing the fsbl build
+TRACE::2020-11-10.11:40:20::SCWMssOS::Removing the swdes entry for  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:20::SCWMssOS::Removing the swdes entry for  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:20::SCWSystem::Clearing the domains completed.
+TRACE::2020-11-10.11:40:20::SCWPlatform::Clearing the opened hw db.
+TRACE::2020-11-10.11:40:20::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform:: Platform location is C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:20::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:20::SCWPlatform::Removing the HwDB with name C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:20::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:20::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:20::SCWPlatform::Do not have an existing db opened. 
+TRACE::2020-11-10.11:40:22::SCWPlatform::Opened new HwDB with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWReader::Active system found as  drone_PS
+TRACE::2020-11-10.11:40:22::SCWReader::Handling sysconfig drone_PS
+TRACE::2020-11-10.11:40:22::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-10.11:40:22::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-10.11:40:22::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:22::SCWReader::Boot application domain added for zynq_fsbl
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:22::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:22::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:22::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2020-11-10.11:40:23::SCWMssOS::No sw design opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::mss exists loading the mss file  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Opened the sw design from mss  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Adding the swdes entry C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss with des name system
+TRACE::2020-11-10.11:40:23::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-10.11:40:23::SCWMssOS::Opened the sw design.  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:23::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS:: library already available in sw design:  xilffs:4.3
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:23::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS:: library already available in sw design:  xilrsa:1.6
+TRACE::2020-11-10.11:40:23::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:23::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:23::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-11-10.11:40:23::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:23::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWReader::No isolation master present  
+TRACE::2020-11-10.11:40:23::SCWDomain::checking for install qemu data   : 
+TRACE::2020-11-10.11:40:23::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/
+TRACE::2020-11-10.11:40:23::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:23::SCWMssOS::No sw design opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::mss exists loading the mss file  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Opened the sw design from mss  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Adding the swdes entry C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss with des name system_0
+TRACE::2020-11-10.11:40:23::SCWMssOS::updating the scw layer about changes
+TRACE::2020-11-10.11:40:23::SCWMssOS::Opened the sw design.  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:40:23::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:40:23::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:40:23::SCWReader::Adding prebuilt librarypaths as   
+TRACE::2020-11-10.11:40:23::SCWReader::Adding prebuilt incpaths  as   
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:40:23::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:40:23::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:40:23::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:40:23::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:40:23::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:40:23::SCWReader::No isolation master present  
+LOG::2020-11-10.11:41:59::SCWPlatform::Started generating the artifacts platform drone_PS
+TRACE::2020-11-10.11:41:59::SCWPlatform::Sanity checking of platform is completed
+LOG::2020-11-10.11:41:59::SCWPlatform::Started generating the artifacts for system configuration drone_PS
+LOG::2020-11-10.11:41:59::SCWSystem::Checking the domain zynq_fsbl
+LOG::2020-11-10.11:41:59::SCWSystem::Doing application build for :  zynq_fsbl
+TRACE::2020-11-10.11:41:59::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-11-10.11:41:59::SCWDomain::Building the domain as part of full build :  zynq_fsbl
+TRACE::2020-11-10.11:41:59::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:41:59::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:41:59::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:41:59::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:41:59::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:41:59::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:41:59::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:41:59::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:41:59::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:41:59::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:41:59::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:42:00::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:42:00::SCWBDomain::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp
+TRACE::2020-11-10.11:42:00::SCWBDomain::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-11-10.11:42:00::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2020-11-10.11:42:00::SCWBDomain::System Command Ran  C:&  cd  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl & make 
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C zynq_fsbl_bsp
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[1]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_4/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:00::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:00::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/bram_v4_4/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/bram_v4_4/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2020-11-10.11:42:00::SCWBDomain::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2020-11-10.11:42:00::SCWBDomain::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/coresightps_dcc_v1_7/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/coresightps_dcc_v1_7/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-11-10.11:42:00::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-11-10.11:42:00::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/cpu_cortexa9_v2_9/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/cpu_cortexa9_v2_9/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:00::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:00::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/ddrps_v1_1/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/ddrps_v1_1/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:00::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:00::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/devcfg_v3_6/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/devcfg_v3_6/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:00::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:00::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/dmaps_v2_6/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/dmaps_v2_6/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-11-10.11:42:00::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-11-10.11:42:00::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:00::SCWBDomain::src/emacps_v3_11/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:00::SCWBDomain::rc/emacps_v3_11/src'
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2020-11-10.11:42:00::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:00::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/gpiops_v3_7/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/gpiops_v3_7/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/qspips_v3_7/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/qspips_v3_7/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/scugic_v4_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/scugic_v4_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2020-11-10.11:42:01::SCWBDomain::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2020-11-10.11:42:01::SCWBDomain::startfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/scutimer_v2_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/scutimer_v2_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/scuwdt_v2_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/scuwdt_v2_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:01::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:01::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/sdps_v3_9/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/sdps_v3_9/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2020-11-10.11:42:01::SCWBDomain::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2020-11-10.11:42:01::SCWBDomain::nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/standalone_v7_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[3]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/standalone_v7_2/src/profile'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[3]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/standalone_v7_2/src/profile'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/standalone_v7_2/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/uartps_v3_9/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/uartps_v3_9/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:01::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:01::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/usbps_v2_5/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/usbps_v2_5/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/xadcps_v2_4/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/xadcps_v2_4/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/xilffs_v4_3/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/xilffs_v4_3/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make include in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:01::SCWBDomain:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:01::SCWBDomain::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/xilrsa_v1_6/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:01::SCWBDomain::rc/xilrsa_v1_6/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_4/src"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make -C ps7_cortexa9_0/libsrc/bram_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-11-10.11:42:01::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-11-10.11:42:01::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:01::SCWBDomain::src/bram_v4_4/src'
+
+TRACE::2020-11-10.11:42:01::SCWBDomain::"Compiling bram"
+
+TRACE::2020-11-10.11:42:02::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:02::SCWBDomain::rc/bram_v4_4/src'
+
+TRACE::2020-11-10.11:42:02::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2020-11-10.11:42:02::SCWBDomain::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-11-10.11:42:03::SCWBDomain::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-11-10.11:42:03::SCWBDomain:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:03::SCWBDomain::src/coresightps_dcc_v1_7/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Compiling coresightps_dcc"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:03::SCWBDomain::rc/coresightps_dcc_v1_7/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2020-11-10.11:42:03::SCWBDomain::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2020-11-10.11:42:03::SCWBDomain::ostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:03::SCWBDomain::src/cpu_cortexa9_v2_9/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Compiling cpu_cortexa9"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:03::SCWBDomain::rc/cpu_cortexa9_v2_9/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:03::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:03::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:03::SCWBDomain::src/ddrps_v1_1/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Compiling ddrps"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:03::SCWBDomain::rc/ddrps_v1_1/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:03::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:03::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:03::SCWBDomain::src/devcfg_v3_6/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Compiling devcfg"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:03::SCWBDomain::rc/devcfg_v3_6/src'
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2020-11-10.11:42:03::SCWBDomain::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:03::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:04::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:04::SCWBDomain::src/dmaps_v2_6/src'
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::"Compiling dmaps"
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:04::SCWBDomain::rc/dmaps_v2_6/src'
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:04::SCWBDomain::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:04::SCWBDomain::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:04::SCWBDomain::src/emacps_v3_11/src'
+
+TRACE::2020-11-10.11:42:04::SCWBDomain::"Compiling emacps"
+
+TRACE::2020-11-10.11:42:05::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:05::SCWBDomain::rc/emacps_v3_11/src'
+
+TRACE::2020-11-10.11:42:05::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2020-11-10.11:42:05::SCWBDomain::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:05::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:05::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:05::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:05::SCWBDomain::src/gpiops_v3_7/src'
+
+TRACE::2020-11-10.11:42:05::SCWBDomain::"Compiling gpiops"
+
+TRACE::2020-11-10.11:42:06::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:06::SCWBDomain::rc/gpiops_v3_7/src'
+
+TRACE::2020-11-10.11:42:06::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2020-11-10.11:42:06::SCWBDomain::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:06::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:06::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:06::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:06::SCWBDomain::src/qspips_v3_7/src'
+
+TRACE::2020-11-10.11:42:06::SCWBDomain::"Compiling qspips"
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:07::SCWBDomain::rc/qspips_v3_7/src'
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:07::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:07::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:07::SCWBDomain::src/scugic_v4_2/src'
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::"Compiling scugic"
+
+TRACE::2020-11-10.11:42:07::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:07::SCWBDomain::rc/scugic_v4_2/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:08::SCWBDomain::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:08::SCWBDomain::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:08::SCWBDomain::src/scutimer_v2_2/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Compiling scutimer"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:08::SCWBDomain::rc/scutimer_v2_2/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:08::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:08::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:08::SCWBDomain::src/scuwdt_v2_2/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Compiling scuwdt"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:08::SCWBDomain::rc/scuwdt_v2_2/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-11-10.11:42:08::SCWBDomain::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-11-10.11:42:08::SCWBDomain::les -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:08::SCWBDomain::src/sdps_v3_9/src'
+
+TRACE::2020-11-10.11:42:08::SCWBDomain::"Compiling sdps"
+
+TRACE::2020-11-10.11:42:09::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:09::SCWBDomain::rc/sdps_v3_9/src'
+
+TRACE::2020-11-10.11:42:09::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2020-11-10.11:42:09::SCWBDomain::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-11-10.11:42:09::SCWBDomain::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-11-10.11:42:09::SCWBDomain::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:09::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:09::SCWBDomain::src/standalone_v7_2/src'
+
+TRACE::2020-11-10.11:42:09::SCWBDomain::"Compiling standalone"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[3]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:13::SCWBDomain::src/standalone_v7_2/src/profile'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[3]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:13::SCWBDomain::rc/standalone_v7_2/src/profile'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:13::SCWBDomain::rc/standalone_v7_2/src'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:13::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:13::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:13::SCWBDomain::src/uartps_v3_9/src'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::"Compiling uartps"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:13::SCWBDomain::rc/uartps_v3_9/src'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:13::SCWBDomain::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:13::SCWBDomain::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:13::SCWBDomain::src/usbps_v2_5/src'
+
+TRACE::2020-11-10.11:42:13::SCWBDomain::"Compiling usbps"
+
+TRACE::2020-11-10.11:42:14::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:14::SCWBDomain::rc/usbps_v2_5/src'
+
+TRACE::2020-11-10.11:42:14::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2020-11-10.11:42:14::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:14::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:14::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:14::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:14::SCWBDomain::src/xadcps_v2_4/src'
+
+TRACE::2020-11-10.11:42:14::SCWBDomain::"Compiling xadcps"
+
+TRACE::2020-11-10.11:42:15::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:15::SCWBDomain::rc/xadcps_v2_4/src'
+
+TRACE::2020-11-10.11:42:15::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilffs_v4_3/src"
+
+TRACE::2020-11-10.11:42:15::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilffs_v4_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:15::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:15::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:15::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:15::SCWBDomain::src/xilffs_v4_3/src'
+
+TRACE::2020-11-10.11:42:15::SCWBDomain::"Compiling XilFFs Library"
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:16::SCWBDomain::rc/xilffs_v4_3/src'
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::"Running Make libs in ps7_cortexa9_0/libsrc/xilrsa_v1_6/src"
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::make -C ps7_cortexa9_0/libsrc/xilrsa_v1_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:16::SCWBDomain::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:16::SCWBDomain::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::make[2]: Entering directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/lib
+TRACE::2020-11-10.11:42:16::SCWBDomain::src/xilrsa_v1_6/src'
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::make[2]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/ps7_cortexa9_0/libs
+TRACE::2020-11-10.11:42:16::SCWBDomain::rc/xilrsa_v1_6/src'
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::'Finished building libraries'
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::make[1]: Leaving directory 'C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp'
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c sd.c -o sd.o -Izynq_fsbl_bsp/ps7_cort
+TRACE::2020-11-10.11:42:16::SCWBDomain::exa9_0/include -I.
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nand.c -o nand.o -Izynq_fsbl_bsp/ps7_
+TRACE::2020-11-10.11:42:16::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:16::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c nor.c -o nor.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2020-11-10.11:42:16::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c image_mover.c -o image_mover.o -Izynq
+TRACE::2020-11-10.11:42:17::SCWBDomain::_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c md5.c -o md5.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2020-11-10.11:42:17::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_hooks.c -o fsbl_hooks.o -Izynq_f
+TRACE::2020-11-10.11:42:17::SCWBDomain::sbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c main.c -o main.o -Izynq_fsbl_bsp/ps7_
+TRACE::2020-11-10.11:42:17::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c rsa.c -o rsa.o -Izynq_fsbl_bsp/ps7_co
+TRACE::2020-11-10.11:42:17::SCWBDomain::rtexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c qspi.c -o qspi.o -Izynq_fsbl_bsp/ps7_
+TRACE::2020-11-10.11:42:17::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c ps7_init.c -o ps7_init.o -Izynq_fsbl_
+TRACE::2020-11-10.11:42:17::SCWBDomain::bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:17::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c pcap.c -o pcap.o -Izynq_fsbl_bsp/ps7_
+TRACE::2020-11-10.11:42:17::SCWBDomain::cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:18::SCWBDomain::arm-none-eabi-gcc -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -O2 -c -c fsbl_handoff.S -o fsbl_handoff.o -Izy
+TRACE::2020-11-10.11:42:18::SCWBDomain::nq_fsbl_bsp/ps7_cortexa9_0/include -I.
+
+TRACE::2020-11-10.11:42:18::SCWBDomain::arm-none-eabi-gcc -o executable.elf  sd.o  nand.o  nor.o  image_mover.o  md5.o  fsbl_hooks.o  main.o  rsa.o  qspi.o  ps7_init.o
+TRACE::2020-11-10.11:42:18::SCWBDomain::  pcap.o  fsbl_handoff.o -MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard   -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=
+TRACE::2020-11-10.11:42:18::SCWBDomain::hard -Wl,-build-id=none -specs=Xilinx.spec  -lrsa -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxi
+TRACE::2020-11-10.11:42:18::SCWBDomain::l,-lgcc,-lc,--end-group -Wl,--start-group,-lrsa,-lxil,-lgcc,-lc,--end-group                                    -Wl,--gc-section
+TRACE::2020-11-10.11:42:18::SCWBDomain::s -Lzynq_fsbl_bsp/ps7_cortexa9_0/lib -L./ -Tlscript.ld
+
+LOG::2020-11-10.11:42:18::SCWSystem::Checking the domain standalone_domain
+LOG::2020-11-10.11:42:18::SCWSystem::Not a boot domain 
+LOG::2020-11-10.11:42:18::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2020-11-10.11:42:18::SCWDomain::Generating domain artifcats
+TRACE::2020-11-10.11:42:18::SCWMssOS::Generating standalone artifcats
+TRACE::2020-11-10.11:42:18::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/sw/drone_PS/qemu/
+TRACE::2020-11-10.11:42:18::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt To C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/sw/drone_PS/standalone_domain/qemu/
+TRACE::2020-11-10.11:42:18::SCWMssOS:: Copying the user libraries. 
+TRACE::2020-11-10.11:42:18::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:18::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:18::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:18::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:42:18::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:18::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:42:18::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:42:18::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:42:18::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:42:18::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:18::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:18::SCWMssOS::Completed writing the mss file at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp
+TRACE::2020-11-10.11:42:18::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:18::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2020-11-10.11:42:18::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2020-11-10.11:42:18::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2020-11-10.11:42:18::SCWMssOS::doing bsp build ... 
+TRACE::2020-11-10.11:42:18::SCWMssOS::System Command Ran  C: & cd  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp & make 
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_4/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:18::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:18::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none
+TRACE::2020-11-10.11:42:18::SCWMssOS::-eabi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=h
+TRACE::2020-11-10.11:42:18::SCWMssOS::ard -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-11-10.11:42:18::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-11-10.11:42:18::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:18::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:18::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:18::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:18::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:18::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:18::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-11-10.11:42:18::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-11-10.11:42:18::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:18::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:18::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2020-11-10.11:42:18::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:18::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:19::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-a
+TRACE::2020-11-10.11:42:19::SCWMssOS::s" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -no
+TRACE::2020-11-10.11:42:19::SCWMssOS::startfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:19::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:19::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:19::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi
+TRACE::2020-11-10.11:42:19::SCWMssOS::-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -
+TRACE::2020-11-10.11:42:19::SCWMssOS::nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:19::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:19::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:19::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as"
+TRACE::2020-11-10.11:42:19::SCWMssOS:: "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nost
+TRACE::2020-11-10.11:42:19::SCWMssOS::artfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_4/src"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::make -C ps7_cortexa9_0/libsrc/bram_v4_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-11-10.11:42:19::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-11-10.11:42:19::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:19::SCWMssOS::"Compiling bram"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-ea
+TRACE::2020-11-10.11:42:20::SCWMssOS::bi-as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard
+TRACE::2020-11-10.11:42:20::SCWMssOS:: -nostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-
+TRACE::2020-11-10.11:42:20::SCWMssOS::as" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -n
+TRACE::2020-11-10.11:42:20::SCWMssOS::ostartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Compiling cpu_cortexa9"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_1/src"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/ddrps_v1_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:20::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:20::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Compiling ddrps"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_6/src"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::make -C ps7_cortexa9_0/libsrc/devcfg_v3_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:20::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:20::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:20::SCWMssOS::"Compiling devcfg"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_6/src"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/dmaps_v2_6/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:21::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:21::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::"Compiling dmaps"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_11/src"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::make -C ps7_cortexa9_0/libsrc/emacps_v3_11/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "
+TRACE::2020-11-10.11:42:21::SCWMssOS::ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostar
+TRACE::2020-11-10.11:42:21::SCWMssOS::tfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:21::SCWMssOS::"Compiling emacps"
+
+TRACE::2020-11-10.11:42:22::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_7/src"
+
+TRACE::2020-11-10.11:42:22::SCWMssOS::make -C ps7_cortexa9_0/libsrc/gpiops_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:22::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:22::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:22::SCWMssOS::"Compiling gpiops"
+
+TRACE::2020-11-10.11:42:23::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_7/src"
+
+TRACE::2020-11-10.11:42:23::SCWMssOS::make -C ps7_cortexa9_0/libsrc/qspips_v3_7/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:23::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:23::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:23::SCWMssOS::"Compiling qspips"
+
+TRACE::2020-11-10.11:42:24::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v4_2/src"
+
+TRACE::2020-11-10.11:42:24::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scugic_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:24::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:24::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:24::SCWMssOS::"Compiling scugic"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_2/src"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scutimer_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" 
+TRACE::2020-11-10.11:42:25::SCWMssOS::"ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nosta
+TRACE::2020-11-10.11:42:25::SCWMssOS::rtfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::"Compiling scutimer"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_2/src"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::make -C ps7_cortexa9_0/libsrc/scuwdt_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:25::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:25::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:25::SCWMssOS::"Compiling scuwdt"
+
+TRACE::2020-11-10.11:42:26::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_9/src"
+
+TRACE::2020-11-10.11:42:26::SCWMssOS::make -C ps7_cortexa9_0/libsrc/sdps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "ARC
+TRACE::2020-11-10.11:42:26::SCWMssOS::HIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfi
+TRACE::2020-11-10.11:42:26::SCWMssOS::les -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:26::SCWMssOS::"Compiling sdps"
+
+TRACE::2020-11-10.11:42:27::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v7_2/src"
+
+TRACE::2020-11-10.11:42:27::SCWMssOS::make -C ps7_cortexa9_0/libsrc/standalone_v7_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as
+TRACE::2020-11-10.11:42:27::SCWMssOS::" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nos
+TRACE::2020-11-10.11:42:27::SCWMssOS::tartfiles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:27::SCWMssOS::"Compiling standalone"
+
+TRACE::2020-11-10.11:42:30::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_9/src"
+
+TRACE::2020-11-10.11:42:30::SCWMssOS::make -C ps7_cortexa9_0/libsrc/uartps_v3_9/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:30::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:30::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:30::SCWMssOS::"Compiling uartps"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_5/src"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/usbps_v2_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "AR
+TRACE::2020-11-10.11:42:31::SCWMssOS::CHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartf
+TRACE::2020-11-10.11:42:31::SCWMssOS::iles -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::"Compiling usbps"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_4/src"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::make -C ps7_cortexa9_0/libsrc/xadcps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ASSEMBLER=arm-none-eabi-as" "A
+TRACE::2020-11-10.11:42:31::SCWMssOS::RCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostart
+TRACE::2020-11-10.11:42:31::SCWMssOS::files -g -Wall -Wextra"
+
+TRACE::2020-11-10.11:42:31::SCWMssOS::"Compiling xadcps"
+
+TRACE::2020-11-10.11:42:32::SCWMssOS::'Finished building libraries'
+
+TRACE::2020-11-10.11:42:32::SCWMssOS::Copying to export directory.
+TRACE::2020-11-10.11:42:32::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2020-11-10.11:42:32::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2020-11-10.11:42:32::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2020-11-10.11:42:32::SCWSystem::Completed Processing the sysconfig drone_PS
+LOG::2020-11-10.11:42:32::SCWPlatform::Completed generating the artifacts for system configuration drone_PS
+TRACE::2020-11-10.11:42:32::SCWPlatform::Started preparing the platform 
+TRACE::2020-11-10.11:42:32::SCWSystem::Writing the bif file for system config drone_PS
+TRACE::2020-11-10.11:42:32::SCWSystem::dir created 
+TRACE::2020-11-10.11:42:32::SCWSystem::Writing the bif 
+TRACE::2020-11-10.11:42:32::SCWPlatform::Started writing the spfm file 
+TRACE::2020-11-10.11:42:32::SCWPlatform::Started writing the xpfm file 
+TRACE::2020-11-10.11:42:32::SCWPlatform::Completed generating the platform
+TRACE::2020-11-10.11:42:32::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:42:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:42:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:42:32::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:42:32::SCWMssOS::Saving the mss changes C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:32::SCWMssOS::Found a swdesign opened with the mssfile.
+TRACE::2020-11-10.11:42:32::SCWMssOS::Completed writemss as part of save.
+TRACE::2020-11-10.11:42:32::SCWMssOS::Commit changes completed.
+TRACE::2020-11-10.11:42:32::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:32::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:32::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:32::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:42:32::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:32::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:42:32::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:42:32::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:42:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:42:33::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:42:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:42:33::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss
+TRACE::2020-11-10.11:42:33::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:42:33::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:42:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:42:33::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:42:33::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:42:33::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:33::SCWWriter::formatted JSON is {
+	"platformName":	"drone_PS",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"drone_PS",
+	"platHandOff":	"C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/drone_FPGA.xsa",
+	"platIntHandOff":	"<platformDir>/hw/drone_FPGA.xsa",
+	"deviceType":	"zynq",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"fsblExtraCompilerFlags":	"-MMD -MP       -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard ",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"drone_PS",
+	"systems":	[{
+			"systemName":	"drone_PS",
+			"systemDesc":	"drone_PS",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"drone_PS",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynq_fsbl",
+					"domainDispName":	"zynq_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"138f4c23a20aaa0c80dc2764121a1212",
+					"compatibleApp":	"zynq_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.3", "xilrsa:1.6"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on ps7_cortexa9_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"ps7_cortexa9_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2020.1/data/emulation/platforms/zynq/qemu/",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.2",
+					"mssFile":	"",
+					"md5Digest":	"eff798c937e0f187c4b993ea0b746d70",
+					"compatibleApp":	"",
+					"domType":	"mssDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2020-11-10.11:42:33::SCWPlatform::updated the xpfm file.
+TRACE::2020-11-10.11:42:33::SCWPlatform::Trying to open the hw design at C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA given C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA absoulate path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform::DSA directory C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw
+TRACE::2020-11-10.11:42:33::SCWPlatform:: Platform Path C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/hw/drone_FPGA.xsa
+TRACE::2020-11-10.11:42:33::SCWPlatform:: Unique name xilinx:pynq-z2::0.0
+TRACE::2020-11-10.11:42:33::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_1
+TRACE::2020-11-10.11:42:33::SCWPlatform::Opened existing hwdb design_1_wrapper_1
+TRACE::2020-11-10.11:42:33::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2020-11-10.11:42:33::SCWMssOS::Checking the sw design at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
+TRACE::2020-11-10.11:42:33::SCWMssOS::DEBUG:  swdes dump  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss|system_0||
+C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/zynq_fsbl/zynq_fsbl_bsp/system.mss|system||
+
+TRACE::2020-11-10.11:42:33::SCWMssOS::Sw design exists and opened at  C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/ps7_cortexa9_0/standalone_domain/bsp/system.mss
