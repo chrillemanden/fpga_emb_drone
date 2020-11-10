@@ -1,4 +1,7 @@
 # Specific files
+FPGA_drone/vivado.jou
+FPGA_drone/vivado.log
+FPGA_drone/vivado_pid12960.str
 
 # Directories
 
