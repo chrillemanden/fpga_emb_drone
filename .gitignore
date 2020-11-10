@@ -2,6 +2,19 @@
 FPGA_drone/vivado.jou
 FPGA_drone/vivado.log
 FPGA_drone/vivado_pid12960.str
+FPGA_drone/drone_FPGA.bit
+FPGA_drone/drone_FPGA.mmi
+FPGA_drone/drone_FPGA.xsa
+FPGA_drone/ps7_init.c
+FPGA_drone/ps7_init.h
+FPGA_drone/ps7_init.html
+FPGA_drone/ps7_init.tcl
+FPGA_drone/ps7_init_gpl.c
+FPGA_drone/ps7_init_gpl.h
+FPGA_drone/vitis_pid680.str
+Vitis/.analytics
+Vitis/IDE.txt
+
 
 # Directories
 
@@ -10,3 +23,6 @@ FPGA_drone/FPGA_drone.hw/
 FPGA_drone/FPGA_drone.runs/
 FPGA_drone/FPGA_drone.srcs/sources_1/bd/mref/
 FPGA_drone/NA/
+Vitis/.metadata/
+Vitis/.sdk/
+Vitis/RemoteSystemsTempFiles/
