@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 10 11:51:18 2020
+// Date        : Tue Nov 17 11:44:01 2020
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.v
@@ -20,14 +20,18 @@ module design_1_Controller_0_0
     clk,
     rst,
     en,
+    en_SPI,
+    dout_SPI,
     we,
     dout,
     addr,
     led);
   input [7:0]SPI_data;
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk_0, INSERT_VIP 0" *) input clk;
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0" *) input clk;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
   output en;
+  output en_SPI;
+  output [23:0]dout_SPI;
   output [3:0]we;
   output [31:0]dout;
   output [31:0]addr;
@@ -98,6 +102,31 @@ module design_1_Controller_0_0
   assign dout[9] = \<const1> ;
   assign dout[8] = \<const1> ;
   assign dout[7:0] = \^dout [7:0];
+  assign dout_SPI[23] = \<const1> ;
+  assign dout_SPI[22] = \<const0> ;
+  assign dout_SPI[21] = \<const1> ;
+  assign dout_SPI[20] = \<const1> ;
+  assign dout_SPI[19] = \<const0> ;
+  assign dout_SPI[18] = \<const0> ;
+  assign dout_SPI[17] = \<const1> ;
+  assign dout_SPI[16] = \<const0> ;
+  assign dout_SPI[15] = \<const0> ;
+  assign dout_SPI[14] = \<const0> ;
+  assign dout_SPI[13] = \<const0> ;
+  assign dout_SPI[12] = \<const0> ;
+  assign dout_SPI[11] = \<const0> ;
+  assign dout_SPI[10] = \<const0> ;
+  assign dout_SPI[9] = \<const0> ;
+  assign dout_SPI[8] = \<const0> ;
+  assign dout_SPI[7] = \<const0> ;
+  assign dout_SPI[6] = \<const0> ;
+  assign dout_SPI[5] = \<const0> ;
+  assign dout_SPI[4] = \<const0> ;
+  assign dout_SPI[3] = \<const0> ;
+  assign dout_SPI[2] = \<const0> ;
+  assign dout_SPI[1] = \<const0> ;
+  assign dout_SPI[0] = \<const0> ;
+  assign en_SPI = \<const0> ;
   assign led[3] = \<const0> ;
   assign led[2] = \<const0> ;
   assign led[1] = \<const0> ;
@@ -105,7 +134,7 @@ module design_1_Controller_0_0
   assign we[3] = \<const0> ;
   assign we[2] = \<const0> ;
   assign we[1] = \<const0> ;
-  assign we[0] = \<const0> ;
+  assign we[0] = \<const1> ;
   GND GND
        (.G(\<const0> ));
   design_1_Controller_0_0_Controller U0

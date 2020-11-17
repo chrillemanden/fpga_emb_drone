@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Tue Nov 10 11:50:24 2020
+--Date        : Tue Nov 17 11:43:10 2020
 --Host        : MSI running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -628,6 +628,7 @@ library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
 entity design_1 is
   port (
+    CS : out STD_LOGIC;
     DDR_addr : inout STD_LOGIC_VECTOR ( 14 downto 0 );
     DDR_ba : inout STD_LOGIC_VECTOR ( 2 downto 0 );
     DDR_cas_n : inout STD_LOGIC;
@@ -649,11 +650,13 @@ entity design_1 is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    MOSI : out STD_LOGIC;
+    SCLK : out STD_LOGIC;
     clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=7,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_bram_cntlr_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=10,numReposBlks=9,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=3,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=2,da_bram_cntlr_cnt=3,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -664,12 +667,32 @@ architecture STRUCTURE of design_1 is
     dout : out STD_LOGIC_VECTOR ( 7 downto 0 )
   );
   end component design_1_xlconstant_0_0;
+  component design_1_clk_divider_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    clk_div : out STD_LOGIC
+  );
+  end component design_1_clk_divider_0_0;
+  component design_1_spi_follower_transmi_0_0 is
+  port (
+    data : in STD_LOGIC_VECTOR ( 23 downto 0 );
+    sck : in STD_LOGIC;
+    en : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    sck_out : out STD_LOGIC;
+    ss : out STD_LOGIC;
+    mosi : out STD_LOGIC
+  );
+  end component design_1_spi_follower_transmi_0_0;
   component design_1_Controller_0_0 is
   port (
     SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
     en : out STD_LOGIC;
+    en_SPI : out STD_LOGIC;
+    dout_SPI : out STD_LOGIC_VECTOR ( 23 downto 0 );
     we : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
     addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -678,9 +701,11 @@ architecture STRUCTURE of design_1 is
   end component design_1_Controller_0_0;
   signal Controller_0_addr : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Controller_0_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal Controller_0_dout_SPI : STD_LOGIC_VECTOR ( 23 downto 0 );
   signal Controller_0_en : STD_LOGIC;
   signal Controller_0_we : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal clk_0_1 : STD_LOGIC;
+  signal clk_1 : STD_LOGIC;
+  signal clk_divider_0_clk_div : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -703,7 +728,11 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_FIXED_IO_PS_PORB : STD_LOGIC;
   signal processing_system7_0_FIXED_IO_PS_SRSTB : STD_LOGIC;
   signal rst_0_1 : STD_LOGIC;
+  signal spi_follower_transmi_0_mosi : STD_LOGIC;
+  signal spi_follower_transmi_0_sck_out : STD_LOGIC;
+  signal spi_follower_transmi_0_ss : STD_LOGIC;
   signal xlconstant_0_dout : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal NLW_Controller_0_en_SPI_UNCONNECTED : STD_LOGIC;
   signal NLW_Controller_0_led_UNCONNECTED : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal NLW_PS_BRAM_BRAM_PORTB_0_dout_UNCONNECTED : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
@@ -736,15 +765,20 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
-  clk_0_1 <= clk;
+  CS <= spi_follower_transmi_0_ss;
+  MOSI <= spi_follower_transmi_0_mosi;
+  SCLK <= spi_follower_transmi_0_sck_out;
+  clk_1 <= clk;
   rst_0_1 <= rst;
 Controller_0: component design_1_Controller_0_0
      port map (
       SPI_data(7 downto 0) => xlconstant_0_dout(7 downto 0),
       addr(31 downto 0) => Controller_0_addr(31 downto 0),
-      clk => clk_0_1,
+      clk => clk_divider_0_clk_div,
       dout(31 downto 0) => Controller_0_dout(31 downto 0),
+      dout_SPI(23 downto 0) => Controller_0_dout_SPI(23 downto 0),
       en => Controller_0_en,
+      en_SPI => NLW_Controller_0_en_SPI_UNCONNECTED,
       led(3 downto 0) => NLW_Controller_0_led_UNCONNECTED(3 downto 0),
       rst => rst_0_1,
       we(3 downto 0) => Controller_0_we(3 downto 0)
@@ -752,7 +786,7 @@ Controller_0: component design_1_Controller_0_0
 PS_BRAM: entity work.PS_BRAM_imp_DIL5HJ
      port map (
       BRAM_PORTB_0_addr(31 downto 0) => Controller_0_addr(31 downto 0),
-      BRAM_PORTB_0_clk => clk_0_1,
+      BRAM_PORTB_0_clk => clk_1,
       BRAM_PORTB_0_din(31 downto 0) => Controller_0_dout(31 downto 0),
       BRAM_PORTB_0_dout => NLW_PS_BRAM_BRAM_PORTB_0_dout_UNCONNECTED,
       BRAM_PORTB_0_en => Controller_0_en,
@@ -779,6 +813,22 @@ PS_BRAM: entity work.PS_BRAM_imp_DIL5HJ
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb
+    );
+clk_divider_0: component design_1_clk_divider_0_0
+     port map (
+      clk => clk_1,
+      clk_div => clk_divider_0_clk_div,
+      rst => rst_0_1
+    );
+spi_follower_transmi_0: component design_1_spi_follower_transmi_0_0
+     port map (
+      data(23 downto 0) => Controller_0_dout_SPI(23 downto 0),
+      en => Controller_0_en,
+      mosi => spi_follower_transmi_0_mosi,
+      rst => rst_0_1,
+      sck => clk_divider_0_clk_div,
+      sck_out => spi_follower_transmi_0_sck_out,
+      ss => spi_follower_transmi_0_ss
     );
 xlconstant_0: component design_1_xlconstant_0_0
      port map (

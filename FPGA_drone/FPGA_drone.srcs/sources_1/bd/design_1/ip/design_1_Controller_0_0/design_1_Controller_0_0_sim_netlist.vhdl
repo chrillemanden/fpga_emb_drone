@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Tue Nov 10 11:51:18 2020
+-- Date        : Tue Nov 17 11:44:01 2020
 -- Host        : MSI running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.vhdl
@@ -120,6 +120,8 @@ entity design_1_Controller_0_0 is
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
     en : out STD_LOGIC;
+    en_SPI : out STD_LOGIC;
+    dout_SPI : out STD_LOGIC_VECTOR ( 23 downto 0 );
     we : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
     addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -144,7 +146,7 @@ architecture STRUCTURE of design_1_Controller_0_0 is
   attribute x_interface_info : string;
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute x_interface_parameter : string;
-  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk_0, INSERT_VIP 0";
+  attribute x_interface_parameter of clk : signal is "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   attribute x_interface_info of rst : signal is "xilinx.com:signal:reset:1.0 rst RST";
   attribute x_interface_parameter of rst : signal is "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
 begin
@@ -205,6 +207,31 @@ begin
   dout(9) <= \<const1>\;
   dout(8) <= \<const1>\;
   dout(7 downto 0) <= \^dout\(7 downto 0);
+  dout_SPI(23) <= \<const1>\;
+  dout_SPI(22) <= \<const0>\;
+  dout_SPI(21) <= \<const1>\;
+  dout_SPI(20) <= \<const1>\;
+  dout_SPI(19) <= \<const0>\;
+  dout_SPI(18) <= \<const0>\;
+  dout_SPI(17) <= \<const1>\;
+  dout_SPI(16) <= \<const0>\;
+  dout_SPI(15) <= \<const0>\;
+  dout_SPI(14) <= \<const0>\;
+  dout_SPI(13) <= \<const0>\;
+  dout_SPI(12) <= \<const0>\;
+  dout_SPI(11) <= \<const0>\;
+  dout_SPI(10) <= \<const0>\;
+  dout_SPI(9) <= \<const0>\;
+  dout_SPI(8) <= \<const0>\;
+  dout_SPI(7) <= \<const0>\;
+  dout_SPI(6) <= \<const0>\;
+  dout_SPI(5) <= \<const0>\;
+  dout_SPI(4) <= \<const0>\;
+  dout_SPI(3) <= \<const0>\;
+  dout_SPI(2) <= \<const0>\;
+  dout_SPI(1) <= \<const0>\;
+  dout_SPI(0) <= \<const0>\;
+  en_SPI <= \<const0>\;
   led(3) <= \<const0>\;
   led(2) <= \<const0>\;
   led(1) <= \<const0>\;
@@ -212,7 +239,7 @@ begin
   we(3) <= \<const0>\;
   we(2) <= \<const0>\;
   we(1) <= \<const0>\;
-  we(0) <= \<const0>\;
+  we(0) <= \<const1>\;
 GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\

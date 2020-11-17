@@ -29,6 +29,8 @@ entity Controller is
     clk : std_logic;
     rst : std_logic;
     en : out std_logic;
+    en_SPI : out std_logic;
+    dout_SPI : out std_logic_vector (23 downto 0);
     we : out std_logic_vector (3 downto 0);
     dout : out std_logic_vector (31 downto 0);
     addr : out std_logic_vector (31 downto 0);
@@ -37,6 +39,8 @@ entity Controller is
 end Controller;
 
 architecture Behavioral of Controller is
+signal en_SPI_int : std_logic := '0';
+signal flag : std_logic := '0';
 
 begin
     process(clk, rst)
@@ -47,10 +51,17 @@ begin
         
         elsif (rising_edge(clk)) then
             addr <= x"40_00_00_04";
-            we <= "0000";
+            we <= "0001";
             dout(7 downto 0) <= SPI_data;
             dout(31 downto 8) <= (others => '1');
             en <= '1';
+            dout_SPI <= "101100100000000000000000";
+--            if (en_SPI_int = '0') then
+--                en_SPI <= '1';
+--                en_SPI_int <= '1';
+--            else
+--                en_SPI <= '0';
+--            end if;
         
         end if;
     end process;    

@@ -59,6 +59,8 @@ ENTITY design_1_Controller_0_0 IS
     clk : IN STD_LOGIC;
     rst : IN STD_LOGIC;
     en : OUT STD_LOGIC;
+    en_SPI : OUT STD_LOGIC;
+    dout_SPI : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
     we : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     addr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -75,6 +77,8 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
       clk : IN STD_LOGIC;
       rst : IN STD_LOGIC;
       en : OUT STD_LOGIC;
+      en_SPI : OUT STD_LOGIC;
+      dout_SPI : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
       we : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       addr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -93,7 +97,7 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_clk_0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : Controller
@@ -102,6 +106,8 @@ BEGIN
       clk => clk,
       rst => rst,
       en => en,
+      en_SPI => en_SPI,
+      dout_SPI => dout_SPI,
       we => we,
       dout => dout,
       addr => addr,

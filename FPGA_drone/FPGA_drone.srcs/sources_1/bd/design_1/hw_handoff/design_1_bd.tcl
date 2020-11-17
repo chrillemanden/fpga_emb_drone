@@ -40,7 +40,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 
 # The design that will be created by this Tcl script contains the following 
 # module references:
-# Controller
+# Controller, clk_divider, spi_follower_transmitter
 
 # Please add the sources of those modules before sourcing this Tcl script.
 
@@ -1024,6 +1024,9 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set CS [ create_bd_port -dir O CS ]
+  set MOSI [ create_bd_port -dir O MOSI ]
+  set SCLK [ create_bd_port -dir O SCLK ]
   set clk [ create_bd_port -dir I -type clk clk ]
   set rst [ create_bd_port -dir I -type rst rst ]
 
@@ -1041,6 +1044,28 @@ proc create_root_design { parentCell } {
   # Create instance: PS_BRAM
   create_hier_cell_PS_BRAM [current_bd_instance .] PS_BRAM
 
+  # Create instance: clk_divider_0, and set properties
+  set block_name clk_divider
+  set block_cell_name clk_divider_0
+  if { [catch {set clk_divider_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $clk_divider_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
+  # Create instance: spi_follower_transmi_0, and set properties
+  set block_name spi_follower_transmitter
+  set block_cell_name spi_follower_transmi_0
+  if { [catch {set spi_follower_transmi_0 [create_bd_cell -type module -reference $block_name $block_cell_name] } errmsg] } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2095 -severity "ERROR" "Unable to add referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   } elseif { $spi_follower_transmi_0 eq "" } {
+     catch {common::send_gid_msg -ssname BD::TCL -id 2096 -severity "ERROR" "Unable to referenced block <$block_name>. Please add the files for ${block_name}'s definition into the project."}
+     return 1
+   }
+  
   # Create instance: xlconstant_0, and set properties
   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
   set_property -dict [ list \
@@ -1054,10 +1079,15 @@ proc create_root_design { parentCell } {
   # Create port connections
   connect_bd_net -net Controller_0_addr [get_bd_pins Controller_0/addr] [get_bd_pins PS_BRAM/BRAM_PORTB_0_addr]
   connect_bd_net -net Controller_0_dout [get_bd_pins Controller_0/dout] [get_bd_pins PS_BRAM/BRAM_PORTB_0_din]
-  connect_bd_net -net Controller_0_en [get_bd_pins Controller_0/en] [get_bd_pins PS_BRAM/BRAM_PORTB_0_en]
+  connect_bd_net -net Controller_0_dout_SPI [get_bd_pins Controller_0/dout_SPI] [get_bd_pins spi_follower_transmi_0/data]
+  connect_bd_net -net Controller_0_en [get_bd_pins Controller_0/en] [get_bd_pins PS_BRAM/BRAM_PORTB_0_en] [get_bd_pins spi_follower_transmi_0/en]
   connect_bd_net -net Controller_0_we [get_bd_pins Controller_0/we] [get_bd_pins PS_BRAM/BRAM_PORTB_0_we]
-  connect_bd_net -net clk_0_1 [get_bd_ports clk] [get_bd_pins Controller_0/clk] [get_bd_pins PS_BRAM/BRAM_PORTB_0_clk]
-  connect_bd_net -net rst_0_1 [get_bd_ports rst] [get_bd_pins Controller_0/rst] [get_bd_pins PS_BRAM/BRAM_PORTB_0_rst]
+  connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins PS_BRAM/BRAM_PORTB_0_clk] [get_bd_pins clk_divider_0/clk]
+  connect_bd_net -net clk_divider_0_clk_div [get_bd_pins Controller_0/clk] [get_bd_pins clk_divider_0/clk_div] [get_bd_pins spi_follower_transmi_0/sck]
+  connect_bd_net -net rst_0_1 [get_bd_ports rst] [get_bd_pins Controller_0/rst] [get_bd_pins PS_BRAM/BRAM_PORTB_0_rst] [get_bd_pins clk_divider_0/rst] [get_bd_pins spi_follower_transmi_0/rst]
+  connect_bd_net -net spi_follower_transmi_0_mosi [get_bd_ports MOSI] [get_bd_pins spi_follower_transmi_0/mosi]
+  connect_bd_net -net spi_follower_transmi_0_sck_out [get_bd_ports SCLK] [get_bd_pins spi_follower_transmi_0/sck_out]
+  connect_bd_net -net spi_follower_transmi_0_ss [get_bd_ports CS] [get_bd_pins spi_follower_transmi_0/ss]
   connect_bd_net -net xlconstant_0_dout [get_bd_pins Controller_0/SPI_data] [get_bd_pins xlconstant_0/dout]
 
   # Create address segments
