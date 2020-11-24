@@ -1,0 +1,7 @@
+0.7
+2020.1
+May 27 2020
+20:09:33
+C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.sim/sim_1/behav/xsim/glbl.v,1590624368,verilog,,,,glbl,,axi_vip_v1_1_7;processing_system7_vip_v1_0_9;smartconnect_v1_0;xilinx_vip,,,,,,
+C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sim_1/new/tb_SPI_receiver.vhd,1606206745,vhdl,,,,tb_spi_receiver,,,,,,,,
+C:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/imports/fpga_drone/spi_follower_receiver.vhd,1606207628,vhdl,,,,spi_follower_receiver,,,,,,,,

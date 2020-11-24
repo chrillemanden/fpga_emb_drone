@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Tue Nov 17 11:43:10 2020
+--Date        : Tue Nov 24 09:16:07 2020
 --Host        : MSI running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -35,6 +35,7 @@ entity design_1_wrapper is
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
+    MISO : in STD_LOGIC;
     MOSI : out STD_LOGIC;
     SCLK : out STD_LOGIC;
     clk : in STD_LOGIC;
@@ -47,6 +48,10 @@ architecture STRUCTURE of design_1_wrapper is
   port (
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
+    MOSI : out STD_LOGIC;
+    CS : out STD_LOGIC;
+    SCLK : out STD_LOGIC;
+    MISO : in STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -67,10 +72,7 @@ architecture STRUCTURE of design_1_wrapper is
     FIXED_IO_ddr_vrp : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC;
     FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC;
-    MOSI : out STD_LOGIC;
-    CS : out STD_LOGIC;
-    SCLK : out STD_LOGIC
+    FIXED_IO_ps_porb : inout STD_LOGIC
   );
   end component design_1;
 begin
@@ -98,6 +100,7 @@ design_1_i: component design_1
       FIXED_IO_ps_clk => FIXED_IO_ps_clk,
       FIXED_IO_ps_porb => FIXED_IO_ps_porb,
       FIXED_IO_ps_srstb => FIXED_IO_ps_srstb,
+      MISO => MISO,
       MOSI => MOSI,
       SCLK => SCLK,
       clk => clk,

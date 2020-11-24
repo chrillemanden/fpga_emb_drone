@@ -56,11 +56,12 @@ USE ieee.numeric_std.ALL;
 ENTITY design_1_Controller_0_0 IS
   PORT (
     SPI_data : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+    read_done : IN STD_LOGIC;
     clk : IN STD_LOGIC;
     rst : IN STD_LOGIC;
     en : OUT STD_LOGIC;
     en_SPI : OUT STD_LOGIC;
-    dout_SPI : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
+    dout_SPI : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
     we : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
     addr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -74,11 +75,12 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   COMPONENT Controller IS
     PORT (
       SPI_data : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
+      read_done : IN STD_LOGIC;
       clk : IN STD_LOGIC;
       rst : IN STD_LOGIC;
       en : OUT STD_LOGIC;
       en_SPI : OUT STD_LOGIC;
-      dout_SPI : OUT STD_LOGIC_VECTOR(23 DOWNTO 0);
+      dout_SPI : OUT STD_LOGIC_VECTOR(15 DOWNTO 0);
       we : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
       dout : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
       addr : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
@@ -97,6 +99,7 @@ BEGIN
   U0 : Controller
     PORT MAP (
       SPI_data => SPI_data,
+      read_done => read_done,
       clk => clk,
       rst => rst,
       en => en,

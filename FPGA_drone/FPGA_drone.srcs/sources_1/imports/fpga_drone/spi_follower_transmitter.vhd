@@ -2,12 +2,13 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 entity spi_follower_transmitter is
-generic (data_length : integer := 24);
+generic (data_length : integer := 16);
 Port (
     data : in std_logic_vector (data_length - 1 downto 0);
     sck  : in std_logic := '0';
     en : in std_logic;
     rst : in std_logic;
+    read_en : out std_logic;
     sck_out : out std_logic;
     ss   : out std_logic;
     mosi : out std_logic);
@@ -39,6 +40,7 @@ architecture Behavioral of spi_follower_transmitter is
             
             Case currentState IS
             when st_idle =>
+                read_en <= '0';
                 ss <= '1';
                 sck_en <= '0';
                 index <= data_length - 1;
@@ -48,6 +50,9 @@ architecture Behavioral of spi_follower_transmitter is
                 sck_en <= '1';
                 mosi <= data(index);
                 index <= index - 1;
+                if (index = 8) then
+                    read_en <= '1';
+                end if;
                 
             when others =>
                 NULL;

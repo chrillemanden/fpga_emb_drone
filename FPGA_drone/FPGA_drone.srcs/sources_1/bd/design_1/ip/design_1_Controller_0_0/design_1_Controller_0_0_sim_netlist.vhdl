@@ -1,7 +1,7 @@
 -- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
--- Date        : Tue Nov 17 11:44:01 2020
+-- Date        : Tue Nov 24 08:49:17 2020
 -- Host        : MSI running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.vhdl
@@ -17,10 +17,11 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_Controller_0_0_Controller is
   port (
     en : out STD_LOGIC;
-    dout : out STD_LOGIC_VECTOR ( 7 downto 0 );
+    dout : out STD_LOGIC_VECTOR ( 8 downto 0 );
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
-    SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 )
+    SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    read_done : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_1_Controller_0_0_Controller : entity is "Controller";
@@ -28,14 +29,23 @@ end design_1_Controller_0_0_Controller;
 
 architecture STRUCTURE of design_1_Controller_0_0_Controller is
   signal p_0_in : STD_LOGIC;
+  signal p_1_in0 : STD_LOGIC;
 begin
-\dout[7]_i_1\: unisim.vcomponents.LUT1
+\dout[31]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => rst,
       O => p_0_in
+    );
+\dout[31]_i_2\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => read_done,
+      O => p_1_in0
     );
 \dout_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -59,6 +69,14 @@ begin
       CE => p_0_in,
       D => SPI_data(2),
       Q => dout(2),
+      R => '0'
+    );
+\dout_reg[31]\: unisim.vcomponents.FDRE
+     port map (
+      C => clk,
+      CE => p_0_in,
+      D => p_1_in0,
+      Q => dout(8),
       R => '0'
     );
 \dout_reg[3]\: unisim.vcomponents.FDRE
@@ -117,11 +135,12 @@ use UNISIM.VCOMPONENTS.ALL;
 entity design_1_Controller_0_0 is
   port (
     SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    read_done : in STD_LOGIC;
     clk : in STD_LOGIC;
     rst : in STD_LOGIC;
     en : out STD_LOGIC;
     en_SPI : out STD_LOGIC;
-    dout_SPI : out STD_LOGIC_VECTOR ( 23 downto 0 );
+    dout_SPI : out STD_LOGIC_VECTOR ( 15 downto 0 );
     we : out STD_LOGIC_VECTOR ( 3 downto 0 );
     dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
     addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -142,7 +161,8 @@ end design_1_Controller_0_0;
 architecture STRUCTURE of design_1_Controller_0_0 is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
-  signal \^dout\ : STD_LOGIC_VECTOR ( 7 downto 0 );
+  signal \^dout\ : STD_LOGIC_VECTOR ( 30 downto 4 );
+  signal \^led\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute x_interface_info : string;
   attribute x_interface_info of clk : signal is "xilinx.com:signal:clock:1.0 clk CLK";
   attribute x_interface_parameter : string;
@@ -182,40 +202,33 @@ begin
   addr(2) <= \<const1>\;
   addr(1) <= \<const0>\;
   addr(0) <= \<const0>\;
-  dout(31) <= \<const1>\;
-  dout(30) <= \<const1>\;
-  dout(29) <= \<const1>\;
-  dout(28) <= \<const1>\;
-  dout(27) <= \<const1>\;
-  dout(26) <= \<const1>\;
-  dout(25) <= \<const1>\;
-  dout(24) <= \<const1>\;
-  dout(23) <= \<const1>\;
-  dout(22) <= \<const1>\;
-  dout(21) <= \<const1>\;
-  dout(20) <= \<const1>\;
-  dout(19) <= \<const1>\;
-  dout(18) <= \<const1>\;
-  dout(17) <= \<const1>\;
-  dout(16) <= \<const1>\;
-  dout(15) <= \<const1>\;
-  dout(14) <= \<const1>\;
-  dout(13) <= \<const1>\;
-  dout(12) <= \<const1>\;
-  dout(11) <= \<const1>\;
-  dout(10) <= \<const1>\;
-  dout(9) <= \<const1>\;
-  dout(8) <= \<const1>\;
-  dout(7 downto 0) <= \^dout\(7 downto 0);
-  dout_SPI(23) <= \<const1>\;
-  dout_SPI(22) <= \<const0>\;
-  dout_SPI(21) <= \<const1>\;
-  dout_SPI(20) <= \<const1>\;
-  dout_SPI(19) <= \<const0>\;
-  dout_SPI(18) <= \<const0>\;
-  dout_SPI(17) <= \<const1>\;
-  dout_SPI(16) <= \<const0>\;
-  dout_SPI(15) <= \<const0>\;
+  dout(31) <= \^dout\(30);
+  dout(30) <= \^dout\(30);
+  dout(29) <= \^dout\(30);
+  dout(28) <= \^dout\(30);
+  dout(27) <= \^dout\(30);
+  dout(26) <= \^dout\(30);
+  dout(25) <= \^dout\(30);
+  dout(24) <= \^dout\(30);
+  dout(23) <= \^dout\(30);
+  dout(22) <= \^dout\(30);
+  dout(21) <= \^dout\(30);
+  dout(20) <= \^dout\(30);
+  dout(19) <= \^dout\(30);
+  dout(18) <= \^dout\(30);
+  dout(17) <= \^dout\(30);
+  dout(16) <= \^dout\(30);
+  dout(15) <= \^dout\(30);
+  dout(14) <= \^dout\(30);
+  dout(13) <= \^dout\(30);
+  dout(12) <= \^dout\(30);
+  dout(11) <= \^dout\(30);
+  dout(10) <= \^dout\(30);
+  dout(9) <= \^dout\(30);
+  dout(8) <= \^dout\(30);
+  dout(7 downto 4) <= \^dout\(7 downto 4);
+  dout(3 downto 0) <= \^led\(3 downto 0);
+  dout_SPI(15) <= \<const1>\;
   dout_SPI(14) <= \<const0>\;
   dout_SPI(13) <= \<const0>\;
   dout_SPI(12) <= \<const0>\;
@@ -232,10 +245,7 @@ begin
   dout_SPI(1) <= \<const0>\;
   dout_SPI(0) <= \<const0>\;
   en_SPI <= \<const0>\;
-  led(3) <= \<const0>\;
-  led(2) <= \<const0>\;
-  led(1) <= \<const0>\;
-  led(0) <= \<const0>\;
+  led(3 downto 0) <= \^led\(3 downto 0);
   we(3) <= \<const0>\;
   we(2) <= \<const0>\;
   we(1) <= \<const0>\;
@@ -248,8 +258,11 @@ U0: entity work.design_1_Controller_0_0_Controller
      port map (
       SPI_data(7 downto 0) => SPI_data(7 downto 0),
       clk => clk,
-      dout(7 downto 0) => \^dout\(7 downto 0),
+      dout(8) => \^dout\(30),
+      dout(7 downto 4) => \^dout\(7 downto 4),
+      dout(3 downto 0) => \^led\(3 downto 0),
       en => en,
+      read_done => read_done,
       rst => rst
     );
 VCC: unisim.vcomponents.VCC

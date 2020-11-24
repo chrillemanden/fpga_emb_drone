@@ -55,10 +55,11 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_spi_follower_transmi_0_0 IS
   PORT (
-    data : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+    data : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
     sck : IN STD_LOGIC;
     en : IN STD_LOGIC;
     rst : IN STD_LOGIC;
+    read_en : OUT STD_LOGIC;
     sck_out : OUT STD_LOGIC;
     ss : OUT STD_LOGIC;
     mosi : OUT STD_LOGIC
@@ -73,10 +74,11 @@ ARCHITECTURE design_1_spi_follower_transmi_0_0_arch OF design_1_spi_follower_tra
       data_length : INTEGER
     );
     PORT (
-      data : IN STD_LOGIC_VECTOR(23 DOWNTO 0);
+      data : IN STD_LOGIC_VECTOR(15 DOWNTO 0);
       sck : IN STD_LOGIC;
       en : IN STD_LOGIC;
       rst : IN STD_LOGIC;
+      read_en : OUT STD_LOGIC;
       sck_out : OUT STD_LOGIC;
       ss : OUT STD_LOGIC;
       mosi : OUT STD_LOGIC
@@ -91,13 +93,14 @@ ARCHITECTURE design_1_spi_follower_transmi_0_0_arch OF design_1_spi_follower_tra
 BEGIN
   U0 : spi_follower_transmitter
     GENERIC MAP (
-      data_length => 24
+      data_length => 16
     )
     PORT MAP (
       data => data,
       sck => sck,
       en => en,
       rst => rst,
+      read_en => read_en,
       sck_out => sck_out,
       ss => ss,
       mosi => mosi

@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 17 11:03:44 2020
+// Date        : Tue Nov 24 08:36:39 2020
 // Host        : MSI running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_spi_follower_transmi_0_0/design_1_spi_follower_transmi_0_0_sim_netlist.v
@@ -20,20 +20,23 @@ module design_1_spi_follower_transmi_0_0
     sck,
     en,
     rst,
+    read_en,
     sck_out,
     ss,
     mosi);
-  input [23:0]data;
+  input [15:0]data;
   input sck;
   input en;
   (* x_interface_info = "xilinx.com:signal:reset:1.0 rst RST" *) (* x_interface_parameter = "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0" *) input rst;
+  output read_en;
   output sck_out;
   output ss;
   output mosi;
 
-  wire [23:0]data;
+  wire [15:0]data;
   wire en;
   wire mosi;
+  wire read_en;
   wire rst;
   wire sck;
   wire sck_out;
@@ -43,6 +46,7 @@ module design_1_spi_follower_transmi_0_0
        (.data(data),
         .en(en),
         .mosi(mosi),
+        .read_en(read_en),
         .rst(rst),
         .sck(sck),
         .sck_out(sck_out),
@@ -52,59 +56,57 @@ endmodule
 (* ORIG_REF_NAME = "spi_follower_transmitter" *) 
 module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
    (sck_out,
+    read_en,
     ss,
     mosi,
-    rst,
     sck,
+    rst,
     en,
     data);
   output sck_out;
+  output read_en;
   output ss;
   output mosi;
-  input rst;
   input sck;
+  input rst;
   input en;
-  input [23:0]data;
+  input [15:0]data;
 
   wire \FSM_onehot_currentState_reg_n_0_[0] ;
   wire \FSM_onehot_currentState_reg_n_0_[1] ;
   wire \FSM_onehot_nextState_reg[0]_i_1_n_0 ;
   wire \FSM_onehot_nextState_reg[1]_i_1_n_0 ;
   wire \FSM_onehot_nextState_reg[2]_i_1_n_0 ;
-  wire \FSM_onehot_nextState_reg[2]_i_3_n_0 ;
   wire \FSM_onehot_nextState_reg_n_0_[0] ;
   wire \FSM_onehot_nextState_reg_n_0_[1] ;
   wire \FSM_onehot_nextState_reg_n_0_[2] ;
-  wire [23:0]data;
+  wire [1:1]currentState_reg;
+  wire [15:0]data;
   wire en;
   wire \index[0]_i_1_n_0 ;
   wire \index[1]_i_1_n_0 ;
   wire \index[2]_i_1_n_0 ;
   wire \index[3]_i_1_n_0 ;
-  wire \index[4]_i_1_n_0 ;
-  wire \index[4]_i_2_n_0 ;
-  wire \index[4]_i_3_n_0 ;
+  wire \index[3]_i_3_n_0 ;
   wire \index_reg_n_0_[0] ;
   wire \index_reg_n_0_[1] ;
   wire \index_reg_n_0_[2] ;
   wire \index_reg_n_0_[3] ;
-  wire \index_reg_n_0_[4] ;
   wire mosi;
-  wire mosi_i_10_n_0;
-  wire mosi_i_11_n_0;
   wire mosi_i_1_n_0;
   wire mosi_i_4_n_0;
   wire mosi_i_5_n_0;
-  wire mosi_i_8_n_0;
-  wire mosi_i_9_n_0;
+  wire mosi_i_6_n_0;
+  wire mosi_i_7_n_0;
   wire mosi_reg_i_2_n_0;
   wire mosi_reg_i_3_n_0;
-  wire mosi_reg_i_6_n_0;
-  wire mosi_reg_i_7_n_0;
   wire nextState;
+  wire read_en;
+  wire read_en_i_1_n_0;
+  wire read_en_i_2_n_0;
   wire rst;
   wire sck;
-  wire sck_en;
+  wire sck_en0;
   wire sck_en_i_1_n_0;
   wire sck_en_reg_n_0;
   wire sck_out;
@@ -140,7 +142,7 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .CE(1'b1),
         .CLR(rst),
         .D(\FSM_onehot_nextState_reg_n_0_[2] ),
-        .Q(sck_en));
+        .Q(currentState_reg));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   LDCE #(
     .INIT(1'b1)) 
@@ -150,14 +152,15 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .G(nextState),
         .GE(1'b1),
         .Q(\FSM_onehot_nextState_reg_n_0_[0] ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
-  LUT4 #(
-    .INIT(16'h4F44)) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT5 #(
+    .INIT(32'h4F444444)) 
     \FSM_onehot_nextState_reg[0]_i_1 
        (.I0(en),
         .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
-        .I2(\FSM_onehot_nextState_reg[2]_i_3_n_0 ),
-        .I3(sck_en),
+        .I2(\index_reg_n_0_[3] ),
+        .I3(read_en_i_2_n_0),
+        .I4(currentState_reg),
         .O(\FSM_onehot_nextState_reg[0]_i_1_n_0 ));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   LDCE #(
@@ -168,12 +171,12 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .G(nextState),
         .GE(1'b1),
         .Q(\FSM_onehot_nextState_reg_n_0_[1] ));
-  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \FSM_onehot_nextState_reg[1]_i_1 
-       (.I0(\FSM_onehot_currentState_reg_n_0_[0] ),
-        .I1(en),
+       (.I0(en),
+        .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
         .O(\FSM_onehot_nextState_reg[1]_i_1_n_0 ));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   LDCE #(
@@ -184,203 +187,156 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .G(nextState),
         .GE(1'b1),
         .Q(\FSM_onehot_nextState_reg_n_0_[2] ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
-  LUT3 #(
-    .INIT(8'hEA)) 
+  LUT6 #(
+    .INIT(64'hFFFFFFFFAAAAAAA8)) 
     \FSM_onehot_nextState_reg[2]_i_1 
-       (.I0(\FSM_onehot_currentState_reg_n_0_[1] ),
-        .I1(\FSM_onehot_nextState_reg[2]_i_3_n_0 ),
-        .I2(sck_en),
+       (.I0(currentState_reg),
+        .I1(\index_reg_n_0_[2] ),
+        .I2(\index_reg_n_0_[1] ),
+        .I3(\index_reg_n_0_[0] ),
+        .I4(\index_reg_n_0_[3] ),
+        .I5(\FSM_onehot_currentState_reg_n_0_[1] ),
         .O(\FSM_onehot_nextState_reg[2]_i_1_n_0 ));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT3 #(
     .INIT(8'hFE)) 
     \FSM_onehot_nextState_reg[2]_i_2 
        (.I0(\FSM_onehot_currentState_reg_n_0_[1] ),
-        .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
-        .I2(sck_en),
+        .I1(currentState_reg),
+        .I2(\FSM_onehot_currentState_reg_n_0_[0] ),
         .O(nextState));
-  LUT5 #(
-    .INIT(32'hFFFFFFFE)) 
-    \FSM_onehot_nextState_reg[2]_i_3 
-       (.I0(\index_reg_n_0_[3] ),
-        .I1(\index_reg_n_0_[1] ),
-        .I2(\index_reg_n_0_[0] ),
-        .I3(\index_reg_n_0_[4] ),
-        .I4(\index_reg_n_0_[2] ),
-        .O(\FSM_onehot_nextState_reg[2]_i_3_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT2 #(
     .INIT(4'h2)) 
     \index[0]_i_1 
-       (.I0(sck_en),
+       (.I0(currentState_reg),
         .I1(\index_reg_n_0_[0] ),
         .O(\index[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
   LUT3 #(
-    .INIT(8'h82)) 
+    .INIT(8'h90)) 
     \index[1]_i_1 
-       (.I0(sck_en),
+       (.I0(\index_reg_n_0_[0] ),
         .I1(\index_reg_n_0_[1] ),
-        .I2(\index_reg_n_0_[0] ),
+        .I2(currentState_reg),
         .O(\index[1]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
-    .INIT(16'h8882)) 
+    .INIT(16'hE100)) 
     \index[2]_i_1 
-       (.I0(sck_en),
-        .I1(\index_reg_n_0_[2] ),
-        .I2(\index_reg_n_0_[0] ),
-        .I3(\index_reg_n_0_[1] ),
-        .O(\index[2]_i_1_n_0 ));
-  LUT6 #(
-    .INIT(64'hAAA8FFFF00020000)) 
-    \index[3]_i_1 
-       (.I0(sck_en),
+       (.I0(\index_reg_n_0_[0] ),
         .I1(\index_reg_n_0_[1] ),
-        .I2(\index_reg_n_0_[0] ),
-        .I3(\index_reg_n_0_[2] ),
-        .I4(\index[4]_i_2_n_0 ),
-        .I5(\index_reg_n_0_[3] ),
-        .O(\index[3]_i_1_n_0 ));
+        .I2(\index_reg_n_0_[2] ),
+        .I3(currentState_reg),
+        .O(\index[2]_i_1_n_0 ));
   LUT2 #(
     .INIT(4'h4)) 
-    \index[4]_i_1 
+    \index[3]_i_1 
        (.I0(rst),
         .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
-        .O(\index[4]_i_1_n_0 ));
+        .O(\index[3]_i_1_n_0 ));
   LUT3 #(
     .INIT(8'h0E)) 
-    \index[4]_i_2 
-       (.I0(sck_en),
-        .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
+    \index[3]_i_2 
+       (.I0(\FSM_onehot_currentState_reg_n_0_[0] ),
+        .I1(currentState_reg),
         .I2(rst),
-        .O(\index[4]_i_2_n_0 ));
-  LUT6 #(
-    .INIT(64'h8888888888888882)) 
-    \index[4]_i_3 
-       (.I0(sck_en),
-        .I1(\index_reg_n_0_[4] ),
-        .I2(\index_reg_n_0_[2] ),
-        .I3(\index_reg_n_0_[0] ),
-        .I4(\index_reg_n_0_[1] ),
-        .I5(\index_reg_n_0_[3] ),
-        .O(\index[4]_i_3_n_0 ));
+        .O(sck_en0));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT5 #(
+    .INIT(32'hFE010000)) 
+    \index[3]_i_3 
+       (.I0(\index_reg_n_0_[2] ),
+        .I1(\index_reg_n_0_[0] ),
+        .I2(\index_reg_n_0_[1] ),
+        .I3(\index_reg_n_0_[3] ),
+        .I4(currentState_reg),
+        .O(\index[3]_i_3_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \index_reg[0] 
        (.C(sck),
-        .CE(\index[4]_i_2_n_0 ),
+        .CE(sck_en0),
         .D(\index[0]_i_1_n_0 ),
         .Q(\index_reg_n_0_[0] ),
-        .S(\index[4]_i_1_n_0 ));
+        .S(\index[3]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \index_reg[1] 
        (.C(sck),
-        .CE(\index[4]_i_2_n_0 ),
+        .CE(sck_en0),
         .D(\index[1]_i_1_n_0 ),
         .Q(\index_reg_n_0_[1] ),
-        .S(\index[4]_i_1_n_0 ));
+        .S(\index[3]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
     \index_reg[2] 
        (.C(sck),
-        .CE(\index[4]_i_2_n_0 ),
+        .CE(sck_en0),
         .D(\index[2]_i_1_n_0 ),
         .Q(\index_reg_n_0_[2] ),
-        .S(\index[4]_i_1_n_0 ));
-  FDRE #(
-    .INIT(1'b0),
-    .IS_C_INVERTED(1'b1)) 
-    \index_reg[3] 
-       (.C(sck),
-        .CE(1'b1),
-        .D(\index[3]_i_1_n_0 ),
-        .Q(\index_reg_n_0_[3] ),
-        .R(1'b0));
+        .S(\index[3]_i_1_n_0 ));
   FDSE #(
     .INIT(1'b1),
     .IS_C_INVERTED(1'b1)) 
-    \index_reg[4] 
+    \index_reg[3] 
        (.C(sck),
-        .CE(\index[4]_i_2_n_0 ),
-        .D(\index[4]_i_3_n_0 ),
-        .Q(\index_reg_n_0_[4] ),
-        .S(\index[4]_i_1_n_0 ));
+        .CE(sck_en0),
+        .D(\index[3]_i_3_n_0 ),
+        .Q(\index_reg_n_0_[3] ),
+        .S(\index[3]_i_1_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFB8FF0000B800)) 
     mosi_i_1
        (.I0(mosi_reg_i_2_n_0),
-        .I1(\index_reg_n_0_[4] ),
+        .I1(\index_reg_n_0_[3] ),
         .I2(mosi_reg_i_3_n_0),
-        .I3(sck_en),
+        .I3(currentState_reg),
         .I4(rst),
         .I5(mosi),
         .O(mosi_i_1_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_10
+    mosi_i_4
        (.I0(data[11]),
         .I1(data[10]),
         .I2(\index_reg_n_0_[1] ),
         .I3(data[9]),
         .I4(\index_reg_n_0_[0] ),
         .I5(data[8]),
-        .O(mosi_i_10_n_0));
+        .O(mosi_i_4_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_11
+    mosi_i_5
        (.I0(data[15]),
         .I1(data[14]),
         .I2(\index_reg_n_0_[1] ),
         .I3(data[13]),
         .I4(\index_reg_n_0_[0] ),
         .I5(data[12]),
-        .O(mosi_i_11_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_4
-       (.I0(data[19]),
-        .I1(data[18]),
-        .I2(\index_reg_n_0_[1] ),
-        .I3(data[17]),
-        .I4(\index_reg_n_0_[0] ),
-        .I5(data[16]),
-        .O(mosi_i_4_n_0));
-  LUT6 #(
-    .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_5
-       (.I0(data[23]),
-        .I1(data[22]),
-        .I2(\index_reg_n_0_[1] ),
-        .I3(data[21]),
-        .I4(\index_reg_n_0_[0] ),
-        .I5(data[20]),
         .O(mosi_i_5_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_8
+    mosi_i_6
        (.I0(data[3]),
         .I1(data[2]),
         .I2(\index_reg_n_0_[1] ),
         .I3(data[1]),
         .I4(\index_reg_n_0_[0] ),
         .I5(data[0]),
-        .O(mosi_i_8_n_0));
+        .O(mosi_i_6_n_0));
   LUT6 #(
     .INIT(64'hAFA0CFCFAFA0C0C0)) 
-    mosi_i_9
+    mosi_i_7
        (.I0(data[7]),
         .I1(data[6]),
         .I2(\index_reg_n_0_[1] ),
         .I3(data[5]),
         .I4(\index_reg_n_0_[0] ),
         .I5(data[4]),
-        .O(mosi_i_9_n_0));
+        .O(mosi_i_7_n_0));
   FDRE #(
     .IS_C_INVERTED(1'b1)) 
     mosi_reg
@@ -394,27 +350,43 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .I1(mosi_i_5_n_0),
         .O(mosi_reg_i_2_n_0),
         .S(\index_reg_n_0_[2] ));
-  MUXF8 mosi_reg_i_3
-       (.I0(mosi_reg_i_6_n_0),
-        .I1(mosi_reg_i_7_n_0),
+  MUXF7 mosi_reg_i_3
+       (.I0(mosi_i_6_n_0),
+        .I1(mosi_i_7_n_0),
         .O(mosi_reg_i_3_n_0),
-        .S(\index_reg_n_0_[3] ));
-  MUXF7 mosi_reg_i_6
-       (.I0(mosi_i_8_n_0),
-        .I1(mosi_i_9_n_0),
-        .O(mosi_reg_i_6_n_0),
         .S(\index_reg_n_0_[2] ));
-  MUXF7 mosi_reg_i_7
-       (.I0(mosi_i_10_n_0),
-        .I1(mosi_i_11_n_0),
-        .O(mosi_reg_i_7_n_0),
-        .S(\index_reg_n_0_[2] ));
+  LUT6 #(
+    .INIT(64'hFFFFFF550000EA00)) 
+    read_en_i_1
+       (.I0(\FSM_onehot_currentState_reg_n_0_[0] ),
+        .I1(\index_reg_n_0_[3] ),
+        .I2(read_en_i_2_n_0),
+        .I3(currentState_reg),
+        .I4(rst),
+        .I5(read_en),
+        .O(read_en_i_1_n_0));
+  (* SOFT_HLUTNM = "soft_lutpair4" *) 
+  LUT3 #(
+    .INIT(8'h01)) 
+    read_en_i_2
+       (.I0(\index_reg_n_0_[1] ),
+        .I1(\index_reg_n_0_[0] ),
+        .I2(\index_reg_n_0_[2] ),
+        .O(read_en_i_2_n_0));
+  FDRE #(
+    .IS_C_INVERTED(1'b1)) 
+    read_en_reg
+       (.C(sck),
+        .CE(1'b1),
+        .D(read_en_i_1_n_0),
+        .Q(read_en),
+        .R(1'b0));
   (* SOFT_HLUTNM = "soft_lutpair3" *) 
   LUT4 #(
-    .INIT(16'hFB0A)) 
+    .INIT(16'hFD0C)) 
     sck_en_i_1
-       (.I0(sck_en),
-        .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
+       (.I0(\FSM_onehot_currentState_reg_n_0_[0] ),
+        .I1(currentState_reg),
         .I2(rst),
         .I3(sck_en_reg_n_0),
         .O(sck_en_i_1_n_0));
@@ -436,10 +408,10 @@ module design_1_spi_follower_transmi_0_0_spi_follower_transmitter
         .O(sck_out));
   (* SOFT_HLUTNM = "soft_lutpair2" *) 
   LUT4 #(
-    .INIT(16'hFD0C)) 
+    .INIT(16'hFB0A)) 
     ss_i_1
-       (.I0(\FSM_onehot_currentState_reg_n_0_[1] ),
-        .I1(\FSM_onehot_currentState_reg_n_0_[0] ),
+       (.I0(\FSM_onehot_currentState_reg_n_0_[0] ),
+        .I1(\FSM_onehot_currentState_reg_n_0_[1] ),
         .I2(rst),
         .I3(ss),
         .O(ss_i_1_n_0));

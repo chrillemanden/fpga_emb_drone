@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FPGA_drone.srcs/sources_1/imports/fpga_drone/spi_follower_receiver.vhd" \
+"../../../../FPGA_drone.srcs/sim_1/new/tb_SPI_receiver.vhd" \
+
+# Do not sort compile order
+nosort
