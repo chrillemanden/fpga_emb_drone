@@ -1,7 +1,7 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 24 10:50:41 2020
+// Date        : Tue Dec  1 09:23:34 2020
 // Host        : DESKTOP-HA9HIB8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/chris/Documents/git-repos/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.v
@@ -44,8 +44,8 @@ module design_1_Controller_0_0
   wire [7:0]SPI_data;
   wire clk;
   wire [7:0]\^dout ;
+  wire [13:0]\^dout_SPI ;
   wire en;
-  wire [3:0]led;
   wire read_done;
   wire rst;
 
@@ -81,39 +81,39 @@ module design_1_Controller_0_0
   assign addr[2] = \<const1> ;
   assign addr[1] = \<const0> ;
   assign addr[0] = \<const0> ;
-  assign dout[31] = \<const0> ;
-  assign dout[30] = \<const0> ;
-  assign dout[29] = \<const0> ;
-  assign dout[28] = \<const0> ;
-  assign dout[27] = \<const0> ;
-  assign dout[26] = \<const0> ;
-  assign dout[25] = \<const0> ;
-  assign dout[24] = \<const0> ;
-  assign dout[23] = \<const0> ;
-  assign dout[22] = \<const0> ;
-  assign dout[21] = \<const0> ;
-  assign dout[20] = \<const0> ;
-  assign dout[19] = \<const0> ;
-  assign dout[18] = \<const0> ;
-  assign dout[17] = \<const0> ;
-  assign dout[16] = \<const0> ;
-  assign dout[15] = \<const0> ;
-  assign dout[14] = \<const0> ;
-  assign dout[13] = \<const0> ;
-  assign dout[12] = \<const0> ;
-  assign dout[11] = \<const0> ;
-  assign dout[10] = \<const0> ;
-  assign dout[9] = \<const0> ;
-  assign dout[8] = \<const0> ;
+  assign dout[31] = \<const1> ;
+  assign dout[30] = \<const1> ;
+  assign dout[29] = \<const1> ;
+  assign dout[28] = \<const1> ;
+  assign dout[27] = \<const1> ;
+  assign dout[26] = \<const1> ;
+  assign dout[25] = \<const1> ;
+  assign dout[24] = \<const1> ;
+  assign dout[23] = \<const1> ;
+  assign dout[22] = \<const1> ;
+  assign dout[21] = \<const1> ;
+  assign dout[20] = \<const1> ;
+  assign dout[19] = \<const1> ;
+  assign dout[18] = \<const1> ;
+  assign dout[17] = \<const1> ;
+  assign dout[16] = \<const1> ;
+  assign dout[15] = \<const1> ;
+  assign dout[14] = \<const1> ;
+  assign dout[13] = \<const1> ;
+  assign dout[12] = \<const1> ;
+  assign dout[11] = \<const1> ;
+  assign dout[10] = \<const1> ;
+  assign dout[9] = \<const1> ;
+  assign dout[8] = \<const1> ;
   assign dout[7:0] = \^dout [7:0];
-  assign dout_SPI[15] = \<const1> ;
+  assign dout_SPI[15] = \^dout_SPI [13];
   assign dout_SPI[14] = \<const0> ;
-  assign dout_SPI[13] = \<const0> ;
+  assign dout_SPI[13] = \^dout_SPI [13];
   assign dout_SPI[12] = \<const0> ;
-  assign dout_SPI[11] = \<const0> ;
-  assign dout_SPI[10] = \<const0> ;
-  assign dout_SPI[9] = \<const0> ;
-  assign dout_SPI[8] = \<const0> ;
+  assign dout_SPI[11] = \^dout_SPI [13];
+  assign dout_SPI[10] = \<const1> ;
+  assign dout_SPI[9] = \^dout_SPI [0];
+  assign dout_SPI[8] = \^dout_SPI [13];
   assign dout_SPI[7] = \<const0> ;
   assign dout_SPI[6] = \<const0> ;
   assign dout_SPI[5] = \<const0> ;
@@ -121,11 +121,15 @@ module design_1_Controller_0_0
   assign dout_SPI[3] = \<const0> ;
   assign dout_SPI[2] = \<const0> ;
   assign dout_SPI[1] = \<const0> ;
-  assign dout_SPI[0] = \<const0> ;
+  assign dout_SPI[0] = \^dout_SPI [0];
   assign en_SPI = \<const0> ;
-  assign we[3] = \<const0> ;
-  assign we[2] = \<const0> ;
-  assign we[1] = \<const0> ;
+  assign led[3] = \<const0> ;
+  assign led[2] = \<const0> ;
+  assign led[1] = \<const0> ;
+  assign led[0] = \<const0> ;
+  assign we[3] = \<const1> ;
+  assign we[2] = \<const1> ;
+  assign we[1] = \<const1> ;
   assign we[0] = \<const1> ;
   GND GND
        (.G(\<const0> ));
@@ -133,8 +137,8 @@ module design_1_Controller_0_0
        (.SPI_data(SPI_data),
         .clk(clk),
         .dout(\^dout ),
+        .dout_SPI({\^dout_SPI [13],\^dout_SPI [0]}),
         .en(en),
-        .led(led),
         .read_done(read_done),
         .rst(rst));
   VCC VCC
@@ -144,36 +148,99 @@ endmodule
 (* ORIG_REF_NAME = "Controller" *) 
 module design_1_Controller_0_0_Controller
    (en,
+    dout_SPI,
     dout,
-    led,
-    read_done,
     rst,
     clk,
-    SPI_data);
+    SPI_data,
+    read_done);
   output en;
+  output [1:0]dout_SPI;
   output [7:0]dout;
-  output [3:0]led;
-  input read_done;
   input rst;
   input clk;
   input [7:0]SPI_data;
+  input read_done;
 
   wire [7:0]SPI_data;
   wire clk;
+  wire [1:0]currentState;
   wire [7:0]dout;
   wire \dout[7]_i_1_n_0 ;
+  wire [1:0]dout_SPI;
+  wire \dout_SPI[15]_i_1_n_0 ;
+  wire \dout_SPI[9]_i_1_n_0 ;
   wire en;
-  wire [3:0]led;
-  wire \led[3]_i_1_n_0 ;
+  wire [1:0]nextState;
   wire read_done;
   wire rst;
 
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
+  LUT3 #(
+    .INIT(8'hAC)) 
+    \FSM_sequential_currentState[0]_i_1 
+       (.I0(currentState[1]),
+        .I1(read_done),
+        .I2(currentState[0]),
+        .O(nextState[0]));
+  (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT2 #(
-    .INIT(4'h2)) 
+    .INIT(4'h6)) 
+    \FSM_sequential_currentState[1]_i_1 
+       (.I0(currentState[0]),
+        .I1(currentState[1]),
+        .O(nextState[1]));
+  (* FSM_ENCODED_STATES = "st_start:00,st_read:01,st_wait_receive:10,st_save_bram:11" *) 
+  FDCE \FSM_sequential_currentState_reg[0] 
+       (.C(clk),
+        .CE(1'b1),
+        .CLR(rst),
+        .D(nextState[0]),
+        .Q(currentState[0]));
+  (* FSM_ENCODED_STATES = "st_start:00,st_read:01,st_wait_receive:10,st_save_bram:11" *) 
+  FDCE \FSM_sequential_currentState_reg[1] 
+       (.C(clk),
+        .CE(1'b1),
+        .CLR(rst),
+        .D(nextState[1]),
+        .Q(currentState[1]));
+  LUT3 #(
+    .INIT(8'h08)) 
     \dout[7]_i_1 
-       (.I0(read_done),
-        .I1(rst),
+       (.I0(currentState[1]),
+        .I1(currentState[0]),
+        .I2(rst),
         .O(\dout[7]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'hFE02)) 
+    \dout_SPI[15]_i_1 
+       (.I0(currentState[0]),
+        .I1(rst),
+        .I2(currentState[1]),
+        .I3(dout_SPI[1]),
+        .O(\dout_SPI[15]_i_1_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair0" *) 
+  LUT4 #(
+    .INIT(16'hFD01)) 
+    \dout_SPI[9]_i_1 
+       (.I0(currentState[0]),
+        .I1(rst),
+        .I2(currentState[1]),
+        .I3(dout_SPI[0]),
+        .O(\dout_SPI[9]_i_1_n_0 ));
+  FDRE \dout_SPI_reg[15] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\dout_SPI[15]_i_1_n_0 ),
+        .Q(dout_SPI[1]),
+        .R(1'b0));
+  FDRE \dout_SPI_reg[9] 
+       (.C(clk),
+        .CE(1'b1),
+        .D(\dout_SPI[9]_i_1_n_0 ),
+        .Q(dout_SPI[0]),
+        .R(1'b0));
   FDRE \dout_reg[0] 
        (.C(clk),
         .CE(\dout[7]_i_1_n_0 ),
@@ -228,35 +295,6 @@ module design_1_Controller_0_0_Controller
         .CLR(rst),
         .D(1'b1),
         .Q(en));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \led[3]_i_1 
-       (.I0(rst),
-        .O(\led[3]_i_1_n_0 ));
-  FDRE \led_reg[0] 
-       (.C(clk),
-        .CE(\led[3]_i_1_n_0 ),
-        .D(SPI_data[0]),
-        .Q(led[0]),
-        .R(1'b0));
-  FDRE \led_reg[1] 
-       (.C(clk),
-        .CE(\led[3]_i_1_n_0 ),
-        .D(SPI_data[1]),
-        .Q(led[1]),
-        .R(1'b0));
-  FDRE \led_reg[2] 
-       (.C(clk),
-        .CE(\led[3]_i_1_n_0 ),
-        .D(SPI_data[2]),
-        .Q(led[2]),
-        .R(1'b0));
-  FDRE \led_reg[3] 
-       (.C(clk),
-        .CE(\led[3]_i_1_n_0 ),
-        .D(SPI_data[3]),
-        .Q(led[3]),
-        .R(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

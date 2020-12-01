@@ -1,9 +1,0 @@
-{
-	"version": "1.0",
-	"modules": {
-		"receiver_control_sim": {
-			"proto_instances": {
-			}
-		}
-	}
-}

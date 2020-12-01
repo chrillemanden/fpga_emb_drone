@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Tue Nov 24 12:04:24 2020
+--Date        : Tue Dec  1 09:22:27 2020
 --Host        : DESKTOP-HA9HIB8 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -670,21 +670,6 @@ architecture STRUCTURE of design_1 is
     clk_div : out STD_LOGIC
   );
   end component design_1_clk_divider_0_0;
-  component design_1_Controller_0_0 is
-  port (
-    SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
-    read_done : in STD_LOGIC;
-    clk : in STD_LOGIC;
-    rst : in STD_LOGIC;
-    en : out STD_LOGIC;
-    en_SPI : out STD_LOGIC;
-    dout_SPI : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    we : out STD_LOGIC_VECTOR ( 3 downto 0 );
-    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
-  );
-  end component design_1_Controller_0_0;
   component design_1_spi_follower_receiver_0_0 is
   port (
     sck : in STD_LOGIC;
@@ -707,6 +692,21 @@ architecture STRUCTURE of design_1 is
     mosi : out STD_LOGIC
   );
   end component design_1_spi_follower_transmi_0_0;
+  component design_1_Controller_0_0 is
+  port (
+    SPI_data : in STD_LOGIC_VECTOR ( 7 downto 0 );
+    read_done : in STD_LOGIC;
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    en : out STD_LOGIC;
+    en_SPI : out STD_LOGIC;
+    dout_SPI : out STD_LOGIC_VECTOR ( 15 downto 0 );
+    we : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 )
+  );
+  end component design_1_Controller_0_0;
   signal Controller_0_addr : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Controller_0_dout : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal Controller_0_dout_SPI : STD_LOGIC_VECTOR ( 15 downto 0 );

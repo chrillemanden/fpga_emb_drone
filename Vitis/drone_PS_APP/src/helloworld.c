@@ -33,6 +33,7 @@ int main()
 	xil_printf("BRAM initialization complete.\r\n");
 
 	int mem_value, addr_value=1;
+	int8_t signed_acc_data = 0;
 
   while(1)
   {
@@ -41,7 +42,8 @@ int main()
 
 		  mem_value = MYMEM_u(addr_value);				//corresponds to memory address 4 on the FPGA (X"40000004")
 
-		  xil_printf("Memory value %d for addr %d.\r\n", mem_value, addr_value);
+		  signed_acc_data = mem_value;
+		  xil_printf("Memory value %d for addr %d.\r\n", signed_acc_data, addr_value);
 
 	  usleep(1000);
 

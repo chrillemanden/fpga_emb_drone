@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.23407",
-   "Default View_TopLeft":"-89,-63",
+   "Default View_ScaleFactor":"0.759659",
+   "Default View_TopLeft":"-398,-28",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -16,9 +16,9 @@ preplace portBus addr -pg 1 -lvl 3 -x 660 -y 180 -defaultsOSRD
 preplace portBus dout -pg 1 -lvl 3 -x 660 -y 150 -defaultsOSRD
 preplace portBus led -pg 1 -lvl 3 -x 660 -y 210 -defaultsOSRD
 preplace portBus we -pg 1 -lvl 3 -x 660 -y 120 -defaultsOSRD
-preplace inst Controller_0 -pg 1 -lvl 2 -x 460 -y 130 -defaultsOSRD
 preplace inst spi_follower_receiver_0 -pg 1 -lvl 1 -x 150 -y 130 -defaultsOSRD
 preplace inst spi_follower_transmi_0 -pg 1 -lvl 2 -x 460 -y 350 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 2 -x 460 -y 130 -defaultsOSRD
 preplace netloc clk_0_1 1 0 2 10 30 290
 preplace netloc rst_0_1 1 0 2 20 40 270
 preplace netloc spi_follower_transmi_0_mosi 1 2 1 610J 380n

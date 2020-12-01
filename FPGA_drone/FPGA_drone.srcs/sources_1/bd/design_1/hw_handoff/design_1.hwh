@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov 24 12:04:29 2020" VIVADOVERSION="2020.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Dec  1 09:22:32 2020" VIVADOVERSION="2020.1">
 
   <SYSTEMINFO ARCH="zynq" BOARD="tul.com.tw:pynq-z2:part0:1.0" DEVICE="7z020" NAME="design_1" PACKAGE="clg400" SPEEDGRADE="-1"/>
 
@@ -12,9 +12,9 @@
     <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="External_Ports_rst">
       <CONNECTIONS>
         <CONNECTION INSTANCE="clk_divider_0" PORT="rst"/>
-        <CONNECTION INSTANCE="Controller_0" PORT="rst"/>
         <CONNECTION INSTANCE="spi_follower_receiver_0" PORT="rst"/>
         <CONNECTION INSTANCE="spi_follower_transmi_0" PORT="rst"/>
+        <CONNECTION INSTANCE="Controller_0" PORT="rst"/>
       </CONNECTIONS>
     </PORT>
     <PORT DIR="O" NAME="MOSI" SIGIS="undef" SIGNAME="spi_follower_transmi_0_mosi">
@@ -3085,9 +3085,9 @@
         </PORT>
         <PORT DIR="O" NAME="clk_div" SIGIS="undef" SIGNAME="clk_divider_0_clk_div">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="Controller_0" PORT="clk"/>
             <CONNECTION INSTANCE="spi_follower_receiver_0" PORT="sck"/>
             <CONNECTION INSTANCE="spi_follower_transmi_0" PORT="sck"/>
+            <CONNECTION INSTANCE="Controller_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
