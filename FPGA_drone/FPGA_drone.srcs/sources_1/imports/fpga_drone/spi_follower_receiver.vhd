@@ -18,12 +18,12 @@ end spi_follower_receiver;
 
 architecture Behavioral of spi_follower_receiver is
 
-    type state is (st_idle, st_sample_begin, st_receive_done);
+    type state is (st_idle, st_sample_begin, st_sample_end, st_receive_done);
     signal currentState : state;
     signal nextState : state;
     
-    signal data_temp : std_logic_vector (data_length - 1 downto 0);
-    signal index   : integer range 0 to 10 := 10;--data_length - 1;
+    signal data_temp : std_logic_vector (data_length - 1 downto 0) := (others => '0');
+    signal index   : integer range 0 to data_length - 1 := data_length - 1;
     
     ATTRIBUTE state_vector : string;
     ATTRIBUTE state_vector OF Behavioral : ARCHITECTURE IS "currentState";
@@ -44,8 +44,9 @@ begin
             when st_sample_begin =>
                 index <= index - 1;
                 data_temp(index) <= miso;
-            when st_receive_done =>
+            when st_sample_end =>
                 data <= data_temp;
+            when st_receive_done =>
                 read_done <= '1'; 
             when others =>
                 NULL;
@@ -60,14 +61,17 @@ begin
             if (read_en = '1') then
                 nextState <= st_sample_begin;
             else
-                nextState <= st_sample_begin;
+                nextState <= st_idle;
             end if;
         when st_sample_begin =>
             if (index = 1) then
-                nextState <= st_receive_done;
+                nextState <= st_sample_end;
             else
                 nextState <= st_sample_begin;
             end if;
+        when st_sample_end =>
+            nextState <= st_receive_done;
+            
         when st_receive_done =>
             nextState <= st_idle;
         when others =>

@@ -47,7 +47,7 @@ Port (
         data     : out std_logic_vector (7 downto 0));
     end component;
 
-signal sck      : std_logic := '0';
+signal sck      : std_logic := '1';
 signal rst      : std_logic := '1';
 signal read_en  : std_logic := '0';
 signal miso     : std_logic := '0';
@@ -68,5 +68,5 @@ Port map(
 sck <= not sck after 100 ns;
 rst <= '0' after 100 ns;
 read_en <= '1' after 100 ns;
-miso <= '1' after 100 ns, '0' after 700 ns, '1' after 900 ns, '0' after 1100 ns, '1' after 1300 ns, '0' after 1500 ns;
+miso <= '1' after 300 ns, '0' after 900 ns, '1' after 1100 ns, '0' after 1300 ns, '1' after 1500 ns, '0' after 1700 ns;
 end Behavioral;

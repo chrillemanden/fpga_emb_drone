@@ -1,8 +1,28 @@
 Vivado Simulator 2020.1
 Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 319caf9d199f4393b3cc4babf07f467f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_SPI_receiver_behav xil_defaultlib.tb_SPI_receiver xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto 319caf9d199f4393b3cc4babf07f467f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot tb_receiver_control_sim_behav xil_defaultlib.tb_receiver_control_sim xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Controller [controller_default]
+Compiling architecture receiver_control_sim_controller_0_0_arch of entity xil_defaultlib.receiver_control_sim_Controller_0_0 [receiver_control_sim_controller_...]
+Compiling architecture behavioral of entity xil_defaultlib.spi_follower_receiver [spi_follower_receiver_default]
+Compiling architecture receiver_control_sim_spi_follower_receiver_0_0_arch of entity xil_defaultlib.receiver_control_sim_spi_follower_receiver_0_0 [receiver_control_sim_spi_followe...]
+Compiling architecture behavioral of entity xil_defaultlib.spi_follower_transmitter [spi_follower_transmitter_default]
+Compiling architecture receiver_control_sim_spi_follower_transmi_0_0_arch of entity xil_defaultlib.receiver_control_sim_spi_follower_transmi_0_0 [receiver_control_sim_spi_followe...]
+Compiling architecture structure of entity xil_defaultlib.receiver_control_sim [receiver_control_sim_default]
+Compiling architecture structure of entity xil_defaultlib.receiver_control_sim_wrapper [receiver_control_sim_wrapper_def...]
+Compiling architecture behavioral of entity xil_defaultlib.tb_receiver_control_sim
+Built simulation snapshot tb_receiver_control_sim_behav

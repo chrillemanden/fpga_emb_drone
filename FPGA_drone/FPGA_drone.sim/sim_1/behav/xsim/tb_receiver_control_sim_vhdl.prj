@@ -1,0 +1,14 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../FPGA_drone.srcs/sources_1/imports/fpga_drone/spi_follower_receiver.vhd" \
+"../../../../FPGA_drone.srcs/sources_1/new/Controller.vhd" \
+"../../../../FPGA_drone.srcs/sources_1/imports/fpga_drone/spi_follower_transmitter.vhd" \
+"../../../../../../fpga_drone/FPGA_drone/FPGA_drone.ip_user_files/bd/receiver_control_sim/ip/receiver_control_sim_spi_follower_receiver_0_0/sim/receiver_control_sim_spi_follower_receiver_0_0.vhd" \
+"../../../../../../fpga_drone/FPGA_drone/FPGA_drone.ip_user_files/bd/receiver_control_sim/ip/receiver_control_sim_Controller_0_0/sim/receiver_control_sim_Controller_0_0.vhd" \
+"../../../../../../fpga_drone/FPGA_drone/FPGA_drone.ip_user_files/bd/receiver_control_sim/ip/receiver_control_sim_spi_follower_transmi_0_0/sim/receiver_control_sim_spi_follower_transmi_0_0.vhd" \
+"../../../../../../fpga_drone/FPGA_drone/FPGA_drone.ip_user_files/bd/receiver_control_sim/sim/receiver_control_sim.vhd" \
+"../../../../FPGA_drone.srcs/sources_1/bd/receiver_control_sim/hdl/receiver_control_sim_wrapper.vhd" \
+"../../../../FPGA_drone.srcs/sim_1/new/tb_receiver_control_sim.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,42 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.23407",
+   "Default View_TopLeft":"-89,-63",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port clk -pg 1 -lvl 0 -x -10 -y 40 -defaultsOSRD
+preplace port rst -pg 1 -lvl 0 -x -10 -y 120 -defaultsOSRD
+preplace port mosi -pg 1 -lvl 3 -x 660 -y 390 -defaultsOSRD
+preplace port en_SPI -pg 1 -lvl 3 -x 660 -y 90 -defaultsOSRD
+preplace port sck_out -pg 1 -lvl 3 -x 660 -y 330 -defaultsOSRD
+preplace port ss -pg 1 -lvl 3 -x 660 -y 360 -defaultsOSRD
+preplace port miso -pg 1 -lvl 0 -x -10 -y 160 -defaultsOSRD
+preplace portBus addr -pg 1 -lvl 3 -x 660 -y 180 -defaultsOSRD
+preplace portBus dout -pg 1 -lvl 3 -x 660 -y 150 -defaultsOSRD
+preplace portBus led -pg 1 -lvl 3 -x 660 -y 210 -defaultsOSRD
+preplace portBus we -pg 1 -lvl 3 -x 660 -y 120 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 2 -x 460 -y 130 -defaultsOSRD
+preplace inst spi_follower_receiver_0 -pg 1 -lvl 1 -x 150 -y 130 -defaultsOSRD
+preplace inst spi_follower_transmi_0 -pg 1 -lvl 2 -x 460 -y 350 -defaultsOSRD
+preplace netloc clk_0_1 1 0 2 10 30 290
+preplace netloc rst_0_1 1 0 2 20 40 270
+preplace netloc spi_follower_transmi_0_mosi 1 2 1 610J 380n
+preplace netloc spi_follower_receiver_0_data 1 1 1 280 100n
+preplace netloc spi_follower_receiver_0_read_done 1 1 1 N 120
+preplace netloc Controller_0_dout_SPI 1 1 2 300 250 600
+preplace netloc Controller_0_en 1 1 2 310 260 610
+preplace netloc spi_follower_transmi_0_read_en 1 0 3 30 10 NJ 10 620
+preplace netloc Controller_0_addr 1 2 1 630J 170n
+preplace netloc Controller_0_dout 1 2 1 NJ 150
+preplace netloc Controller_0_en_SPI 1 2 1 NJ 90
+preplace netloc Controller_0_led 1 2 1 630J 190n
+preplace netloc Controller_0_we 1 2 1 630J 120n
+preplace netloc spi_follower_transmi_0_sck_out 1 2 1 620J 330n
+preplace netloc spi_follower_transmi_0_ss 1 2 1 NJ 360
+preplace netloc miso_0_1 1 0 1 N 160
+levelinfo -pg 1 -10 150 460 660
+pagesize -pg 1 -db -bbox -sgen -90 0 780 440
+"
+}
+0

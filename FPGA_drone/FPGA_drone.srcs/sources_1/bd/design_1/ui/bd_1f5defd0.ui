@@ -1,7 +1,7 @@
 {
    "ActiveEmotionalView":"Default View",
    "Default View_ScaleFactor":"0.981818",
-   "Default View_TopLeft":"-106,-128",
+   "Default View_TopLeft":"-106,-125",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
@@ -15,27 +15,27 @@ preplace port SCLK -pg 1 -lvl 4 -x 1040 -y 60 -defaultsOSRD
 preplace port MISO -pg 1 -lvl 0 -x -60 -y 100 -defaultsOSRD
 preplace inst PS_BRAM -pg 1 -lvl 3 -x 850 -y 300 -defaultsOSRD
 preplace inst clk_divider_0 -pg 1 -lvl 1 -x 110 -y 360 -defaultsOSRD
-preplace inst spi_follower_transmi_0 -pg 1 -lvl 3 -x 850 -y 90 -defaultsOSRD
-preplace inst Controller_0 -pg 1 -lvl 2 -x 410 -y 270 -defaultsOSRD
+preplace inst Controller_0 -pg 1 -lvl 2 -x 420 -y 270 -defaultsOSRD
 preplace inst spi_follower_receiver_0 -pg 1 -lvl 1 -x 110 -y 70 -defaultsOSRD
-preplace netloc Controller_0_en 1 2 1 580 100n
-preplace netloc Controller_0_we 1 2 1 550 270n
-preplace netloc Controller_0_dout 1 2 1 N 290
-preplace netloc Controller_0_addr 1 2 1 570 250n
-preplace netloc rst_0_1 1 0 3 -30 170 270 140 590
+preplace inst spi_follower_transmi_0 -pg 1 -lvl 3 -x 850 -y 90 -defaultsOSRD
+preplace netloc Controller_0_en 1 2 1 600 100n
+preplace netloc Controller_0_we 1 2 1 560 270n
+preplace netloc Controller_0_dout 1 2 1 570 290n
+preplace netloc Controller_0_addr 1 2 1 580 260n
+preplace netloc rst_0_1 1 0 3 -30 170 270 140 610
 preplace netloc clk_divider_0_clk_div 1 0 3 -10 -20 240 80 N
-preplace netloc Controller_0_dout_SPI 1 2 1 550 60n
+preplace netloc Controller_0_dout_SPI 1 2 1 580 60n
 preplace netloc spi_follower_transmi_0_mosi 1 3 1 NJ 120
 preplace netloc spi_follower_transmi_0_ss 1 3 1 1010J 90n
 preplace netloc spi_follower_transmi_0_sck_out 1 3 1 1020J 60n
-preplace netloc clk_1 1 0 3 -40J 160 260J 150 560J
+preplace netloc clk_1 1 0 3 -40J 160 260J 150 590J
 preplace netloc spi_follower_transmi_0_read_en 1 0 4 -20 -30 NJ -30 NJ -30 1010
 preplace netloc miso_0_1 1 0 1 N 100
 preplace netloc spi_follower_receiver_0_data 1 1 1 230 80n
 preplace netloc spi_follower_receiver_0_read_done 1 1 1 250 60n
 preplace netloc processing_system7_0_DDR 1 3 1 1020J 270n
 preplace netloc processing_system7_0_FIXED_IO 1 3 1 1010J 300n
-levelinfo -pg 1 -60 110 410 850 1040
+levelinfo -pg 1 -60 110 420 850 1040
 pagesize -pg 1 -db -bbox -sgen -150 -90 1150 710
 "
 }

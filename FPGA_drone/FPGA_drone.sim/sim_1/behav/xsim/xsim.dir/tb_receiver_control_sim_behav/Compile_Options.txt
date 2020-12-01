@@ -1,0 +1,1 @@
+-wto "319caf9d199f4393b3cc4babf07f467f" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "xilinx_vip" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "tb_receiver_control_sim_behav" "xil_defaultlib.tb_receiver_control_sim" "xil_defaultlib.glbl" -log "elaborate.log" 

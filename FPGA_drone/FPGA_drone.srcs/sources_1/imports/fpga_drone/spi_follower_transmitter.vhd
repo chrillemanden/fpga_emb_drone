@@ -83,7 +83,7 @@ architecture Behavioral of spi_follower_transmitter is
         
     end process next_state;     
 
-    process (sck_en)
+    process (sck_en, sck)
         begin
             if (sck_en = '1') then
                 sck_out <= sck;

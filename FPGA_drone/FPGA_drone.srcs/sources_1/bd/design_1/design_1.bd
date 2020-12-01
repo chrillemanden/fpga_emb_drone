@@ -6,7 +6,8 @@
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2020.1"
+      "tool_version": "2020.1",
+      "validated": "true"
     },
     "design_tree": {
       "PS_BRAM": {
@@ -17,28 +18,120 @@
         "axi_bram_ctrl_0_bram": ""
       },
       "clk_divider_0": "",
-      "spi_follower_transmi_0": "",
       "Controller_0": "",
-      "spi_follower_receiver_0": ""
+      "spi_follower_receiver_0": "",
+      "spi_follower_transmi_0": ""
     },
     "interface_ports": {
       "DDR": {
         "mode": "Master",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          },
+          "TIMEPERIOD_PS": {
+            "value": "1250",
+            "value_src": "default"
+          },
+          "MEMORY_TYPE": {
+            "value": "COMPONENTS",
+            "value_src": "default"
+          },
+          "DATA_WIDTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "CS_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "DATA_MASK_ENABLED": {
+            "value": "true",
+            "value_src": "default"
+          },
+          "SLOT": {
+            "value": "Single",
+            "value_src": "default"
+          },
+          "MEM_ADDR_MAP": {
+            "value": "ROW_COLUMN_BANK",
+            "value_src": "default"
+          },
+          "BURST_LENGTH": {
+            "value": "8",
+            "value_src": "default"
+          },
+          "AXI_ARBITRATION_SCHEME": {
+            "value": "TDM",
+            "value_src": "default"
+          },
+          "CAS_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          },
+          "CAS_WRITE_LATENCY": {
+            "value": "11",
+            "value_src": "default"
+          }
+        }
       },
       "FIXED_IO": {
         "mode": "Master",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
+        "parameters": {
+          "CAN_DEBUG": {
+            "value": "false",
+            "value_src": "default"
+          }
+        }
       }
     },
     "ports": {
       "clk": {
         "type": "clk",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "design_1_clk",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
       },
       "rst": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "MOSI": {
         "direction": "O"
@@ -1779,10 +1872,10 @@
           }
         },
         "interface_nets": {
-          "processing_system7_0_M_AXI_GP0": {
+          "Conn1": {
             "interface_ports": [
-              "processing_system7_0/M_AXI_GP0",
-              "axi_smc/S00_AXI"
+              "BRAM_PORTB_0",
+              "axi_bram_ctrl_0_bram/BRAM_PORTB"
             ]
           },
           "processing_system7_0_DDR": {
@@ -1797,22 +1890,22 @@
               "axi_bram_ctrl_0/BRAM_PORTA"
             ]
           },
-          "processing_system7_0_FIXED_IO": {
-            "interface_ports": [
-              "FIXED_IO",
-              "processing_system7_0/FIXED_IO"
-            ]
-          },
-          "Conn1": {
-            "interface_ports": [
-              "BRAM_PORTB_0",
-              "axi_bram_ctrl_0_bram/BRAM_PORTB"
-            ]
-          },
           "axi_smc_M00_AXI": {
             "interface_ports": [
               "axi_smc/M00_AXI",
               "axi_bram_ctrl_0/S_AXI"
+            ]
+          },
+          "processing_system7_0_M_AXI_GP0": {
+            "interface_ports": [
+              "processing_system7_0/M_AXI_GP0",
+              "axi_smc/S00_AXI"
+            ]
+          },
+          "processing_system7_0_FIXED_IO": {
+            "interface_ports": [
+              "FIXED_IO",
+              "processing_system7_0/FIXED_IO"
             ]
           }
         },
@@ -1852,52 +1945,38 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "design_1_clk",
+                "value_src": "default_prop"
+              }
+            }
           },
           "rst": {
             "type": "rst",
             "direction": "I"
           },
           "clk_div": {
-            "direction": "O"
-          }
-        }
-      },
-      "spi_follower_transmi_0": {
-        "vlnv": "xilinx.com:module_ref:spi_follower_transmitter:1.0",
-        "xci_name": "design_1_spi_follower_transmi_0_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "spi_follower_transmitter",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "data": {
-            "direction": "I",
-            "left": "15",
-            "right": "0"
-          },
-          "sck": {
-            "direction": "I"
-          },
-          "en": {
-            "direction": "I"
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I"
-          },
-          "read_en": {
-            "direction": "O"
-          },
-          "sck_out": {
-            "direction": "O"
-          },
-          "ss": {
-            "direction": "O"
-          },
-          "mosi": {
-            "direction": "O"
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "",
+                "value_src": "weak"
+              },
+              "FREQ_HZ": {
+                "value": "",
+                "value_src": "weak"
+              },
+              "PHASE": {
+                "value": "",
+                "value_src": "weak"
+              }
+            }
           }
         }
       },
@@ -1920,7 +1999,13 @@
           },
           "clk": {
             "type": "clk",
-            "direction": "I"
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
           },
           "rst": {
             "type": "rst",
@@ -1990,6 +2075,44 @@
             "right": "0"
           }
         }
+      },
+      "spi_follower_transmi_0": {
+        "vlnv": "xilinx.com:module_ref:spi_follower_transmitter:1.0",
+        "xci_name": "design_1_spi_follower_transmi_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_follower_transmitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sck": {
+            "direction": "I"
+          },
+          "en": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "read_en": {
+            "direction": "O"
+          },
+          "sck_out": {
+            "direction": "O"
+          },
+          "ss": {
+            "direction": "O"
+          },
+          "mosi": {
+            "direction": "O"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -2037,17 +2160,17 @@
           "rst",
           "PS_BRAM/BRAM_PORTB_0_rst",
           "clk_divider_0/rst",
-          "spi_follower_transmi_0/rst",
           "Controller_0/rst",
-          "spi_follower_receiver_0/rst"
+          "spi_follower_receiver_0/rst",
+          "spi_follower_transmi_0/rst"
         ]
       },
       "clk_divider_0_clk_div": {
         "ports": [
           "clk_divider_0/clk_div",
-          "spi_follower_transmi_0/sck",
           "Controller_0/clk",
-          "spi_follower_receiver_0/sck"
+          "spi_follower_receiver_0/sck",
+          "spi_follower_transmi_0/sck"
         ]
       },
       "Controller_0_dout_SPI": {

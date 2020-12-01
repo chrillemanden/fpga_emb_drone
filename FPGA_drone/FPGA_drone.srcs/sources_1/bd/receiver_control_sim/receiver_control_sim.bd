@@ -1,0 +1,369 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x4BD6A3EC034CD553",
+      "device": "xc7z020clg400-1",
+      "name": "receiver_control_sim",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "Controller_0": "",
+      "spi_follower_receiver_0": "",
+      "spi_follower_transmi_0": ""
+    },
+    "ports": {
+      "clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "receiver_control_sim_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "mosi": {
+        "direction": "O"
+      },
+      "addr": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "dout": {
+        "direction": "O",
+        "left": "31",
+        "right": "0"
+      },
+      "en_SPI": {
+        "direction": "O"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "we": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "sck_out": {
+        "direction": "O"
+      },
+      "ss": {
+        "direction": "O"
+      },
+      "miso": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "Controller_0": {
+        "vlnv": "xilinx.com:module_ref:Controller:1.0",
+        "xci_name": "receiver_control_sim_Controller_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Controller",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "SPI_data": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "read_done": {
+            "direction": "I"
+          },
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "receiver_control_sim_clk_0",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "en": {
+            "direction": "O"
+          },
+          "en_SPI": {
+            "direction": "O"
+          },
+          "dout_SPI": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "we": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          },
+          "dout": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "addr": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "led": {
+            "direction": "O",
+            "left": "3",
+            "right": "0"
+          }
+        }
+      },
+      "spi_follower_receiver_0": {
+        "vlnv": "xilinx.com:module_ref:spi_follower_receiver:1.0",
+        "xci_name": "receiver_control_sim_spi_follower_receiver_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_follower_receiver",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "sck": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "receiver_control_sim_clk_0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "read_en": {
+            "direction": "I"
+          },
+          "miso": {
+            "direction": "I"
+          },
+          "read_done": {
+            "direction": "O"
+          },
+          "data": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "spi_follower_transmi_0": {
+        "vlnv": "xilinx.com:module_ref:spi_follower_transmitter:1.0",
+        "xci_name": "receiver_control_sim_spi_follower_transmi_0_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "spi_follower_transmitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "sck": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "receiver_control_sim_clk_0",
+                "value_src": "default_prop"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default_prop"
+              },
+              "PHASE": {
+                "value": "0.000",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "en": {
+            "direction": "I"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "read_en": {
+            "direction": "O"
+          },
+          "sck_out": {
+            "direction": "O"
+          },
+          "ss": {
+            "direction": "O"
+          },
+          "mosi": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_0_1": {
+        "ports": [
+          "clk",
+          "Controller_0/clk",
+          "spi_follower_receiver_0/sck",
+          "spi_follower_transmi_0/sck"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "Controller_0/rst",
+          "spi_follower_receiver_0/rst",
+          "spi_follower_transmi_0/rst"
+        ]
+      },
+      "spi_follower_transmi_0_mosi": {
+        "ports": [
+          "spi_follower_transmi_0/mosi",
+          "mosi"
+        ]
+      },
+      "spi_follower_receiver_0_data": {
+        "ports": [
+          "spi_follower_receiver_0/data",
+          "Controller_0/SPI_data"
+        ]
+      },
+      "spi_follower_receiver_0_read_done": {
+        "ports": [
+          "spi_follower_receiver_0/read_done",
+          "Controller_0/read_done"
+        ]
+      },
+      "Controller_0_dout_SPI": {
+        "ports": [
+          "Controller_0/dout_SPI",
+          "spi_follower_transmi_0/data"
+        ]
+      },
+      "Controller_0_en": {
+        "ports": [
+          "Controller_0/en",
+          "spi_follower_transmi_0/en"
+        ]
+      },
+      "spi_follower_transmi_0_read_en": {
+        "ports": [
+          "spi_follower_transmi_0/read_en",
+          "spi_follower_receiver_0/read_en"
+        ]
+      },
+      "Controller_0_addr": {
+        "ports": [
+          "Controller_0/addr",
+          "addr"
+        ]
+      },
+      "Controller_0_dout": {
+        "ports": [
+          "Controller_0/dout",
+          "dout"
+        ]
+      },
+      "Controller_0_en_SPI": {
+        "ports": [
+          "Controller_0/en_SPI",
+          "en_SPI"
+        ]
+      },
+      "Controller_0_led": {
+        "ports": [
+          "Controller_0/led",
+          "led"
+        ]
+      },
+      "Controller_0_we": {
+        "ports": [
+          "Controller_0/we",
+          "we"
+        ]
+      },
+      "spi_follower_transmi_0_sck_out": {
+        "ports": [
+          "spi_follower_transmi_0/sck_out",
+          "sck_out"
+        ]
+      },
+      "spi_follower_transmi_0_ss": {
+        "ports": [
+          "spi_follower_transmi_0/ss",
+          "ss"
+        ]
+      },
+      "miso_0_1": {
+        "ports": [
+          "miso",
+          "spi_follower_receiver_0/miso"
+        ]
+      }
+    }
+  }
+}

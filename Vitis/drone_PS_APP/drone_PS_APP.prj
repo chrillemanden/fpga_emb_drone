@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
-<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="drone_PS_APP" location="C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS_APP" platform="C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/drone_PS.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="drone_PS_APP_system" sysConfig="drone_PS" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4b3a49fe47e2cdb4d178b97b3a815403">
-  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.858177526">
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="drone_PS_APP" location="C:/Users/chris/Documents/git-repos/fpga_emb_drone/Vitis/drone_PS_APP" platform="C:/Users/chris/Documents/git-repos/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/drone_PS.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" systemProject="drone_PS_APP_system" sysConfig="drone_PS" runtime="C/C++" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="4b3a49fe47e2cdb4d178b97b3a815403">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.502238600">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1202363703" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.168730727" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="hello_world"/>

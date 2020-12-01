@@ -36,11 +36,12 @@ int main()
 
   while(1)
   {
-		  xil_printf("Enter memory value for address %d:\r\n", addr_value);
-	  	  scanf("%d", &mem_value);
+		  //xil_printf("Enter memory value for address %d:\r\n", addr_value);
+	  	  //scanf("%d", &mem_value);
 
-	  	  xil_printf("Memory value %d \n", MYMEM_u(addr_value) );		//corresponds to memory address 4 on the FPGA (X"40000004")
+		  mem_value = MYMEM_u(addr_value);				//corresponds to memory address 4 on the FPGA (X"40000004")
 
+		  xil_printf("Memory value %d for addr %d.\r\n", mem_value, addr_value);
 
 	  usleep(1000);
 
@@ -76,3 +77,4 @@ int initBRAM()
 	xil_printf("Done.\r\n");
 	return XST_SUCCESS;
 }
+

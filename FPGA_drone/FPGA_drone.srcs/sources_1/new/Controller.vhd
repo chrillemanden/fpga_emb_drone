@@ -53,8 +53,8 @@ begin
         elsif (rising_edge(clk)) then
             addr <= x"40_00_00_04";
             we <= "0001";
-            dout(7 downto 0) <= SPI_data;
-            dout(31 downto 8) <= (others => '1');
+            --dout(7 downto 0) <= SPI_data;
+            --dout(31 downto 8) <= (others => '1');
             en <= '1';
             dout_SPI <= "1000000000000000";
             led <= SPI_data( 3 downto 0);

@@ -1,10 +1,10 @@
 // Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
-// Date        : Tue Nov 24 08:49:17 2020
-// Host        : MSI running 64-bit major release  (build 9200)
+// Date        : Tue Nov 24 10:50:41 2020
+// Host        : DESKTOP-HA9HIB8 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/Users/Bruger/Documents/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.v
+//               c:/Users/chris/Documents/git-repos/fpga_emb_drone/FPGA_drone/FPGA_drone.srcs/sources_1/bd/design_1/ip/design_1_Controller_0_0/design_1_Controller_0_0_sim_netlist.v
 // Design      : design_1_Controller_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -43,7 +43,7 @@ module design_1_Controller_0_0
   wire \<const1> ;
   wire [7:0]SPI_data;
   wire clk;
-  wire [30:4]\^dout ;
+  wire [7:0]\^dout ;
   wire en;
   wire [3:0]led;
   wire read_done;
@@ -81,32 +81,31 @@ module design_1_Controller_0_0
   assign addr[2] = \<const1> ;
   assign addr[1] = \<const0> ;
   assign addr[0] = \<const0> ;
-  assign dout[31] = \^dout [30];
-  assign dout[30] = \^dout [30];
-  assign dout[29] = \^dout [30];
-  assign dout[28] = \^dout [30];
-  assign dout[27] = \^dout [30];
-  assign dout[26] = \^dout [30];
-  assign dout[25] = \^dout [30];
-  assign dout[24] = \^dout [30];
-  assign dout[23] = \^dout [30];
-  assign dout[22] = \^dout [30];
-  assign dout[21] = \^dout [30];
-  assign dout[20] = \^dout [30];
-  assign dout[19] = \^dout [30];
-  assign dout[18] = \^dout [30];
-  assign dout[17] = \^dout [30];
-  assign dout[16] = \^dout [30];
-  assign dout[15] = \^dout [30];
-  assign dout[14] = \^dout [30];
-  assign dout[13] = \^dout [30];
-  assign dout[12] = \^dout [30];
-  assign dout[11] = \^dout [30];
-  assign dout[10] = \^dout [30];
-  assign dout[9] = \^dout [30];
-  assign dout[8] = \^dout [30];
-  assign dout[7:4] = \^dout [7:4];
-  assign dout[3:0] = led;
+  assign dout[31] = \<const0> ;
+  assign dout[30] = \<const0> ;
+  assign dout[29] = \<const0> ;
+  assign dout[28] = \<const0> ;
+  assign dout[27] = \<const0> ;
+  assign dout[26] = \<const0> ;
+  assign dout[25] = \<const0> ;
+  assign dout[24] = \<const0> ;
+  assign dout[23] = \<const0> ;
+  assign dout[22] = \<const0> ;
+  assign dout[21] = \<const0> ;
+  assign dout[20] = \<const0> ;
+  assign dout[19] = \<const0> ;
+  assign dout[18] = \<const0> ;
+  assign dout[17] = \<const0> ;
+  assign dout[16] = \<const0> ;
+  assign dout[15] = \<const0> ;
+  assign dout[14] = \<const0> ;
+  assign dout[13] = \<const0> ;
+  assign dout[12] = \<const0> ;
+  assign dout[11] = \<const0> ;
+  assign dout[10] = \<const0> ;
+  assign dout[9] = \<const0> ;
+  assign dout[8] = \<const0> ;
+  assign dout[7:0] = \^dout [7:0];
   assign dout_SPI[15] = \<const1> ;
   assign dout_SPI[14] = \<const0> ;
   assign dout_SPI[13] = \<const0> ;
@@ -133,8 +132,9 @@ module design_1_Controller_0_0
   design_1_Controller_0_0_Controller U0
        (.SPI_data(SPI_data),
         .clk(clk),
-        .dout({\^dout [30],\^dout [7:4],led}),
+        .dout(\^dout ),
         .en(en),
+        .led(led),
         .read_done(read_done),
         .rst(rst));
   VCC VCC
@@ -145,87 +145,80 @@ endmodule
 module design_1_Controller_0_0_Controller
    (en,
     dout,
-    clk,
+    led,
+    read_done,
     rst,
-    SPI_data,
-    read_done);
+    clk,
+    SPI_data);
   output en;
-  output [8:0]dout;
-  input clk;
-  input rst;
-  input [7:0]SPI_data;
+  output [7:0]dout;
+  output [3:0]led;
   input read_done;
+  input rst;
+  input clk;
+  input [7:0]SPI_data;
 
   wire [7:0]SPI_data;
   wire clk;
-  wire [8:0]dout;
+  wire [7:0]dout;
+  wire \dout[7]_i_1_n_0 ;
   wire en;
-  wire p_0_in;
-  wire p_1_in0;
+  wire [3:0]led;
+  wire \led[3]_i_1_n_0 ;
   wire read_done;
   wire rst;
 
-  LUT1 #(
-    .INIT(2'h1)) 
-    \dout[31]_i_1 
-       (.I0(rst),
-        .O(p_0_in));
-  LUT1 #(
-    .INIT(2'h1)) 
-    \dout[31]_i_2 
+  LUT2 #(
+    .INIT(4'h2)) 
+    \dout[7]_i_1 
        (.I0(read_done),
-        .O(p_1_in0));
+        .I1(rst),
+        .O(\dout[7]_i_1_n_0 ));
   FDRE \dout_reg[0] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[0]),
         .Q(dout[0]),
         .R(1'b0));
   FDRE \dout_reg[1] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[1]),
         .Q(dout[1]),
         .R(1'b0));
   FDRE \dout_reg[2] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[2]),
         .Q(dout[2]),
         .R(1'b0));
-  FDRE \dout_reg[31] 
-       (.C(clk),
-        .CE(p_0_in),
-        .D(p_1_in0),
-        .Q(dout[8]),
-        .R(1'b0));
   FDRE \dout_reg[3] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[3]),
         .Q(dout[3]),
         .R(1'b0));
   FDRE \dout_reg[4] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[4]),
         .Q(dout[4]),
         .R(1'b0));
   FDRE \dout_reg[5] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[5]),
         .Q(dout[5]),
         .R(1'b0));
   FDRE \dout_reg[6] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[6]),
         .Q(dout[6]),
         .R(1'b0));
   FDRE \dout_reg[7] 
        (.C(clk),
-        .CE(p_0_in),
+        .CE(\dout[7]_i_1_n_0 ),
         .D(SPI_data[7]),
         .Q(dout[7]),
         .R(1'b0));
@@ -235,6 +228,35 @@ module design_1_Controller_0_0_Controller
         .CLR(rst),
         .D(1'b1),
         .Q(en));
+  LUT1 #(
+    .INIT(2'h1)) 
+    \led[3]_i_1 
+       (.I0(rst),
+        .O(\led[3]_i_1_n_0 ));
+  FDRE \led_reg[0] 
+       (.C(clk),
+        .CE(\led[3]_i_1_n_0 ),
+        .D(SPI_data[0]),
+        .Q(led[0]),
+        .R(1'b0));
+  FDRE \led_reg[1] 
+       (.C(clk),
+        .CE(\led[3]_i_1_n_0 ),
+        .D(SPI_data[1]),
+        .Q(led[1]),
+        .R(1'b0));
+  FDRE \led_reg[2] 
+       (.C(clk),
+        .CE(\led[3]_i_1_n_0 ),
+        .D(SPI_data[2]),
+        .Q(led[2]),
+        .R(1'b0));
+  FDRE \led_reg[3] 
+       (.C(clk),
+        .CE(\led[3]_i_1_n_0 ),
+        .D(SPI_data[3]),
+        .Q(led[3]),
+        .R(1'b0));
 endmodule
 `ifndef GLBL
 `define GLBL

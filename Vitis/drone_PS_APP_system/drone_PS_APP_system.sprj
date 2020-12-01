@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="ASCII"?>
-<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="drone_PS_APP_system" platform="C:/Users/Bruger/Documents/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/drone_PS.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" sysConfig="drone_PS" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="drone_PS_APP_system" platform="C:/Users/chris/Documents/git-repos/fpga_emb_drone/Vitis/drone_PS/export/drone_PS/drone_PS.xpfm" platformUID="xilinx:pynq-z2::0.0(custom)" sysConfig="drone_PS" runtime="C/C++" rootFSLocation="" linuxImage="" sysroot="">
   <configuration name="Debug">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="drone_PS_APP" domainName="standalone_domain" domainPrettyName="standalone_domain" appBuildConfig="Debug"/>
