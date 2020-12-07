@@ -23,6 +23,9 @@
 #define gyro_div 131
 #define acc_div 16384
 #define PI 3.14159265359
+#define kp 1
+#define ki 1
+#define kd 1
 //#define MAXMEM	   ((ConfigPtr->MemHighAddress-ConfigPtr->MemBaseAddress)+1)/sizeof(u32)
 
 XBram Bram;
@@ -42,6 +45,8 @@ int main()
 	int8_t signed_acc_data = 0;
 	int16_t gyro_raw_x, gyro_raw_y, gyro_raw_z, acc_raw_x, acc_raw_y, acc_raw_z = 0;
 	float gyro_angle_x, gyro_angle_y, acc_angle_x, acc_angle_y, total_angle_x, total_angle_y = 0;
+	float pwm_RF, pwm_RB, pwm_LF, pwm_LB = 0;
+	float elapsed_time = 0;
 
 
   while(1)
@@ -59,9 +64,12 @@ int main()
 		gyro_raw_x = MYMEM_u(3);
 		gyro_raw_y = MYMEM_u(4);
 		gyro_raw_z = MYMEM_u(5);
-		calc_gyro_ang(gyro_raw_x, gyro_raw_y, &gyro_angle_x, &gyro_angle_y);
+		calc_gyro_ang(gyro_raw_x, gyro_raw_y, &gyro_angle_x, &gyro_angle_y, &elapsed_time);
 		calc_acc_ang(acc_raw_x, acc_raw_y, acc_raw_z, &acc_angle_x, &acc_angle_y);
 		calc_total_ang(&gyro_angle_x, &gyro_angle_y, &acc_angle_x, &acc_angle_y, &total_angle_x, &total_angle_y);
+		calc_pwm(total_angle_x, total_angle_y, &pwm_RF, &pwm_RB, &pwm_LF, &pwm_LB, elapsed_time);
+
+
 	  //usleep(1000);
 
   } //end while loop
@@ -70,7 +78,9 @@ int main()
     return 0;
 }
 
-void calc_gyro_ang(int16_t gyro_raw_x, int16_t gyro_raw_y, float* gyro_angle_x, float* gyro_angle_y)
+
+
+void calc_gyro_ang(int16_t gyro_raw_x, int16_t gyro_raw_y, float* gyro_angle_x, float* gyro_angle_y, float* elapsed_time)
 {
 	static float gyro_error_x, gyro_error_y = 0;
 	static int i, gyro_error = 0;
@@ -109,8 +119,9 @@ void calc_gyro_ang(int16_t gyro_raw_x, int16_t gyro_raw_y, float* gyro_angle_x, 
 			prev_gyro = gyro_raw_y;
 			gettimeofday(&start, NULL);
 			time_us = start.tv_sec*1000000+start.tv_usec;
-			gyro_angle_x = gyro_angle_x + ((gyro_raw_x/gyro_div)-gyro_error_x)*(time_us-prev_time_us);
-			gyro_angle_y = gyro_angle_y + ((gyro_raw_y/gyro_div)-gyro_error_y)*((time_us-prev_time_us)/1000000);
+			elapsed_time = (time_us-prev_time_us)/1000000;
+			gyro_angle_x = gyro_angle_x + ((gyro_raw_x/gyro_div)-gyro_error_x)*(elapsed_time-prev_time_us);
+			gyro_angle_y = gyro_angle_y + ((gyro_raw_y/gyro_div)-gyro_error_y)*(elapsed_time);
 			prev_time_us = time_us;
 			//xil_printf("Gyro x angle: %f", gyro_angle_x);
 			//xil_printf("Gyro y angle: %f", gyro_angle_y);
@@ -167,6 +178,38 @@ void calc_total_ang(float* gyro_angle_x, float* gyro_angle_y, float* acc_angle_x
 	xil_printf("total y angle: %f", total_angle_y);
 }
 
+void calc_pwm(int16_t total_angle_x, int16_t total_angle_y, float* pwm_RF, float* pwm_RB, float* pwm_LF, float* pwm_LB, float elapsed_time)
+{
+	static float, roll_error, pitch_error, roll_previous_error, pitch_previous_error = 0; 
+	static float roll_pid_p, pitch_pid_p, roll_pid_i, pitch_pid_i, roll_pid_d, pitch_pid_d, roll_PID, pitch_PID = 0;
+
+	roll_previous_error = roll_error;
+	pitch_previous_error = pitch_error;
+	roll_error = total_angle_y - 0;
+    pitch_error = total_angle_x - 0;
+
+	roll_pid_p = kp*roll_error;
+    pitch_pid_p = kp*pitch_error; 
+
+	roll_pid_i = roll_pid_i+(ki*roll_error);
+	pitch_pid_i = pitch_pid_i+(ki*pitch_error);
+
+	roll_pid_d = kd*((roll_error - roll_previous_error)/elapsed_time);
+	pitch_pid_d = kd*((pitch_error - pitch_previous_error)/elapsed_time);
+
+	roll_PID = roll_pid_p + roll_pid_i + roll_pid_d;
+    pitch_PID = pitch_pid_p + pitch_pid_i + pitch_pid_d;
+
+	pwm_RF = -roll_PID - pitch_PID;
+	pwm_RB = -roll_PID + pitch_PID;
+	pwm_LF = roll_PID - pitch_PID;
+	pwm_LB = roll_PID + pitch_PID;
+
+	if(pwm_RF < 0){pwm_RF = 0;}
+	if(pwm_RB < 0){pwm_RB = 0;}
+	if(pwm_LF < 0){pwm_LF = 0;}
+	if(pwm_LB < 0){pwm_LB = 0;}
+}
 /*
  * This function initializes the BRAM driver. If an error occurs then exit
  */
