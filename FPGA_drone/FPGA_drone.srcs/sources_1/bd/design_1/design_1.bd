@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x4B9EE333AE18D032",
+      "boundary_crc": "0x7121FC3E4D936EFA",
       "device": "xc7z020clg400-1",
       "name": "design_1",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
@@ -144,6 +144,11 @@
       },
       "MISO": {
         "direction": "I"
+      },
+      "led": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
       }
     },
     "components": {
@@ -1878,10 +1883,10 @@
               "axi_bram_ctrl_0/BRAM_PORTA"
             ]
           },
-          "processing_system7_0_FIXED_IO": {
+          "Conn1": {
             "interface_ports": [
-              "FIXED_IO",
-              "processing_system7_0/FIXED_IO"
+              "BRAM_PORTB_0",
+              "axi_bram_ctrl_0_bram/BRAM_PORTB"
             ]
           },
           "processing_system7_0_M_AXI_GP0": {
@@ -1902,10 +1907,10 @@
               "axi_bram_ctrl_0/S_AXI"
             ]
           },
-          "Conn1": {
+          "processing_system7_0_FIXED_IO": {
             "interface_ports": [
-              "BRAM_PORTB_0",
-              "axi_bram_ctrl_0_bram/BRAM_PORTB"
+              "FIXED_IO",
+              "processing_system7_0/FIXED_IO"
             ]
           }
         },
@@ -2130,13 +2135,6 @@
       }
     },
     "nets": {
-      "Controller_0_en": {
-        "ports": [
-          "Controller_0/en",
-          "PS_BRAM/BRAM_PORTB_0_en",
-          "spi_follower_transmi_0/en"
-        ]
-      },
       "Controller_0_we": {
         "ports": [
           "Controller_0/we",
@@ -2226,6 +2224,24 @@
         "ports": [
           "spi_follower_receiver_0/read_done",
           "Controller_0/read_done"
+        ]
+      },
+      "Controller_0_led": {
+        "ports": [
+          "Controller_0/led",
+          "led"
+        ]
+      },
+      "Controller_0_en": {
+        "ports": [
+          "Controller_0/en",
+          "PS_BRAM/BRAM_PORTB_0_en"
+        ]
+      },
+      "Controller_0_en_SPI": {
+        "ports": [
+          "Controller_0/en_SPI",
+          "spi_follower_transmi_0/en"
         ]
       }
     },

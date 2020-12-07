@@ -1029,6 +1029,7 @@ proc create_root_design { parentCell } {
   set MOSI [ create_bd_port -dir O MOSI ]
   set SCLK [ create_bd_port -dir O SCLK ]
   set clk [ create_bd_port -dir I -type clk clk ]
+  set led [ create_bd_port -dir O -from 3 -to 0 led ]
   set rst [ create_bd_port -dir I -type rst rst ]
 
   # Create instance: Controller_0, and set properties
@@ -1086,7 +1087,9 @@ proc create_root_design { parentCell } {
   connect_bd_net -net Controller_0_addr [get_bd_pins Controller_0/addr] [get_bd_pins PS_BRAM/BRAM_PORTB_0_addr]
   connect_bd_net -net Controller_0_dout [get_bd_pins Controller_0/dout] [get_bd_pins PS_BRAM/BRAM_PORTB_0_din]
   connect_bd_net -net Controller_0_dout_SPI [get_bd_pins Controller_0/dout_SPI] [get_bd_pins spi_follower_transmi_0/data]
-  connect_bd_net -net Controller_0_en [get_bd_pins Controller_0/en] [get_bd_pins PS_BRAM/BRAM_PORTB_0_en] [get_bd_pins spi_follower_transmi_0/en]
+  connect_bd_net -net Controller_0_en [get_bd_pins Controller_0/en] [get_bd_pins PS_BRAM/BRAM_PORTB_0_en]
+  connect_bd_net -net Controller_0_en_SPI [get_bd_pins Controller_0/en_SPI] [get_bd_pins spi_follower_transmi_0/en]
+  connect_bd_net -net Controller_0_led [get_bd_ports led] [get_bd_pins Controller_0/led]
   connect_bd_net -net Controller_0_we [get_bd_pins Controller_0/we] [get_bd_pins PS_BRAM/BRAM_PORTB_0_we]
   connect_bd_net -net clk_1 [get_bd_ports clk] [get_bd_pins PS_BRAM/BRAM_PORTB_0_clk] [get_bd_pins clk_divider_0/clk]
   connect_bd_net -net clk_divider_0_clk_div [get_bd_pins Controller_0/clk] [get_bd_pins clk_divider_0/clk_div] [get_bd_pins spi_follower_receiver_0/sck] [get_bd_pins spi_follower_transmi_0/sck]

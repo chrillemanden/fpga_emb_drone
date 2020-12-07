@@ -73,6 +73,9 @@ ARCHITECTURE receiver_control_sim_Controller_0_0_arch OF receiver_control_sim_Co
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF receiver_control_sim_Controller_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT Controller IS
+    GENERIC (
+      n_registers : INTEGER
+    );
     PORT (
       SPI_data : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       read_done : IN STD_LOGIC;
@@ -93,10 +96,13 @@ ARCHITECTURE receiver_control_sim_Controller_0_0_arch OF receiver_control_sim_Co
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF rst: SIGNAL IS "XIL_INTERFACENAME rst, POLARITY ACTIVE_LOW, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF rst: SIGNAL IS "xilinx.com:signal:reset:1.0 rst RST";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN receiver_control_sim_clk_0, INSERT_VIP 0";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF clk: SIGNAL IS "XIL_INTERFACENAME clk, ASSOCIATED_RESET rst, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN receiver_control_sim_clk, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : Controller
+    GENERIC MAP (
+      n_registers => 12
+    )
     PORT MAP (
       SPI_data => SPI_data,
       read_done => read_done,

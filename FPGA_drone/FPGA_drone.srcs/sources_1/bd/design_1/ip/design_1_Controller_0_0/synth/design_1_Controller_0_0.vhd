@@ -73,6 +73,9 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_Controller_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT Controller IS
+    GENERIC (
+      n_registers : INTEGER
+    );
     PORT (
       SPI_data : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       read_done : IN STD_LOGIC;
@@ -92,7 +95,7 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_Controller_0_0_arch : ARCHITECTURE IS "design_1_Controller_0_0,Controller,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Controller_0_0_arch: ARCHITECTURE IS "design_1_Controller_0_0,Controller,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=Controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_Controller_0_0_arch: ARCHITECTURE IS "design_1_Controller_0_0,Controller,{x_ipProduct=Vivado 2020.1,x_ipVendor=xilinx.com,x_ipLibrary=module_ref,x_ipName=Controller,x_ipVersion=1.0,x_ipCoreRevision=1,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,n_registers=12}";
   ATTRIBUTE IP_DEFINITION_SOURCE : STRING;
   ATTRIBUTE IP_DEFINITION_SOURCE OF design_1_Controller_0_0_arch: ARCHITECTURE IS "module_ref";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
@@ -103,6 +106,9 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : Controller
+    GENERIC MAP (
+      n_registers => 12
+    )
     PORT MAP (
       SPI_data => SPI_data,
       read_done => read_done,

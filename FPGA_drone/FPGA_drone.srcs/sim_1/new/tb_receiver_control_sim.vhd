@@ -46,7 +46,7 @@ component receiver_control_sim_wrapper is
     addr : out STD_LOGIC_VECTOR ( 31 downto 0 );
     clk : in STD_LOGIC;
     dout : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    en_SPI : out STD_LOGIC;
+    en_0 : out STD_LOGIC;
     led : out STD_LOGIC_VECTOR ( 3 downto 0 );
     miso : in STD_LOGIC;
     mosi : out STD_LOGIC;
@@ -64,7 +64,7 @@ signal miso : STD_LOGIC := '0';
 signal    mosi : STD_LOGIC;
 signal    addr : STD_LOGIC_VECTOR ( 31 downto 0 );
 signal    dout : STD_LOGIC_VECTOR ( 31 downto 0 );
-signal   en_SPI :STD_LOGIC;
+signal   en_0 :STD_LOGIC;
 signal    led : STD_LOGIC_VECTOR ( 3 downto 0 );
 signal    we : STD_LOGIC_VECTOR ( 3 downto 0 );
 signal    sck_out : STD_LOGIC;
@@ -77,7 +77,7 @@ tb_receiver_control_sim: receiver_control_sim_wrapper
       addr(31 downto 0) => addr(31 downto 0),
       clk => clk,
       dout(31 downto 0) => dout(31 downto 0),
-      en_SPI => en_SPI,
+      en_0 => en_0,
       led(3 downto 0) => led(3 downto 0),
       miso => miso,
       mosi => mosi,

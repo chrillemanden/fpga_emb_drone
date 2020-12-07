@@ -1,7 +1,7 @@
 --Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2020.1 (win64) Build 2902540 Wed May 27 19:54:49 MDT 2020
---Date        : Tue Dec  1 09:22:27 2020
+--Date        : Mon Dec  7 17:24:08 2020
 --Host        : DESKTOP-HA9HIB8 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
@@ -39,6 +39,7 @@ entity design_1_wrapper is
     MOSI : out STD_LOGIC;
     SCLK : out STD_LOGIC;
     clk : in STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
     rst : in STD_LOGIC
   );
 end design_1_wrapper;
@@ -52,6 +53,13 @@ architecture STRUCTURE of design_1_wrapper is
     CS : out STD_LOGIC;
     SCLK : out STD_LOGIC;
     MISO : in STD_LOGIC;
+    led : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
+    FIXED_IO_ddr_vrn : inout STD_LOGIC;
+    FIXED_IO_ddr_vrp : inout STD_LOGIC;
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    FIXED_IO_ps_clk : inout STD_LOGIC;
+    FIXED_IO_ps_porb : inout STD_LOGIC;
     DDR_cas_n : inout STD_LOGIC;
     DDR_cke : inout STD_LOGIC;
     DDR_ck_n : inout STD_LOGIC;
@@ -66,13 +74,7 @@ architecture STRUCTURE of design_1_wrapper is
     DDR_dm : inout STD_LOGIC_VECTOR ( 3 downto 0 );
     DDR_dq : inout STD_LOGIC_VECTOR ( 31 downto 0 );
     DDR_dqs_n : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 );
-    FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
-    FIXED_IO_ddr_vrn : inout STD_LOGIC;
-    FIXED_IO_ddr_vrp : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC;
-    FIXED_IO_ps_clk : inout STD_LOGIC;
-    FIXED_IO_ps_porb : inout STD_LOGIC
+    DDR_dqs_p : inout STD_LOGIC_VECTOR ( 3 downto 0 )
   );
   end component design_1;
 begin
@@ -104,6 +106,7 @@ design_1_i: component design_1
       MOSI => MOSI,
       SCLK => SCLK,
       clk => clk,
+      led(3 downto 0) => led(3 downto 0),
       rst => rst
     );
 end STRUCTURE;

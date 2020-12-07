@@ -73,6 +73,9 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE DowngradeIPIdentifiedWarnings : STRING;
   ATTRIBUTE DowngradeIPIdentifiedWarnings OF design_1_Controller_0_0_arch: ARCHITECTURE IS "yes";
   COMPONENT Controller IS
+    GENERIC (
+      n_registers : INTEGER
+    );
     PORT (
       SPI_data : IN STD_LOGIC_VECTOR(7 DOWNTO 0);
       read_done : IN STD_LOGIC;
@@ -97,6 +100,9 @@ ARCHITECTURE design_1_Controller_0_0_arch OF design_1_Controller_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF clk: SIGNAL IS "xilinx.com:signal:clock:1.0 clk CLK";
 BEGIN
   U0 : Controller
+    GENERIC MAP (
+      n_registers => 12
+    )
     PORT MAP (
       SPI_data => SPI_data,
       read_done => read_done,

@@ -31,21 +31,39 @@ int main()
 	initBRAM();
 
 	xil_printf("BRAM initialization complete.\r\n");
+	int n_registers = 6;
 
-	int mem_value, addr_value=1;
+	int mem_value, addr_value=0;
 	int8_t signed_acc_data = 0;
+	int16_t signed_data = 0;
 
   while(1)
   {
 		  //xil_printf("Enter memory value for address %d:\r\n", addr_value);
 	  	  //scanf("%d", &mem_value);
 
-		  mem_value = MYMEM_u(addr_value);				//corresponds to memory address 4 on the FPGA (X"40000004")
+	  // reset the address value
+	  addr_value = 0;
 
-		  signed_acc_data = mem_value;
-		  xil_printf("Memory value %d for addr %d.\r\n", signed_acc_data, addr_value);
+	  for (int i = 0; i < n_registers; ++i)
+	  {
+		  //mem_value = MYMEM_u(addr_value); // read the memory address
+		  signed_data = MYMEM_u(addr_value);
+		  //signed_acc_data = MYMEM_u(addr_value);
 
-	  usleep(1000);
+		  xil_printf("Memory value %d for addr %d.\r\n", signed_data, addr_value);
+		  addr_value++;
+		  usleep(300000);
+	  }
+	  xil_printf("\r\n");
+
+		  //mem_value = MYMEM_u(addr_value);				//corresponds to memory address 4 on the FPGA (X"40000004")
+
+		  //signed_acc_data = mem_value;
+//		  signed_data = MYMEM_u(addr_value);
+//		  xil_printf("Memory value %d for addr %d.\r\n", signed_data, addr_value);
+//
+//	  usleep(1000);
 
   } //end while loop
 
