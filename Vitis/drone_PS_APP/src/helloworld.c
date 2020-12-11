@@ -200,7 +200,7 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 		{
 			prev_acc = *acc_raw_z;
 			acc_error_x = acc_error_x + (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI));
-			acc_error_y = acc_error_y + (atan((*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI));
+			acc_error_y = acc_error_y + (atan(-1*(*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI));
 			if (i == 199)
 			{
 				acc_error_x = acc_error_x/200;
@@ -217,7 +217,7 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 		{
 			prev_acc = *acc_raw_y;
 			*acc_angle_x = (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI)) - acc_error_x;
-			*acc_angle_y = (atan((*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI)) - acc_error_y;
+			*acc_angle_y = (atan(-1*(*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI)) - acc_error_y;
 			printf("Inside acc function:\nacc_error_x: %.2f \n", acc_error_x);
 			printf("acc_error_y: %2f \n\r", acc_error_y);
 			//printf("acc x angle: %.3f \n", *acc_angle_x);
