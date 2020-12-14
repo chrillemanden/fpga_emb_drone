@@ -235,8 +235,10 @@ void calc_total_ang(float *gyro_angle_x, float *gyro_angle_y, float *acc_angle_x
 	printf("acc y angle: %.3f \n", *acc_angle_y);
 	printf("total x angle: %.3f \n", *total_angle_x);
 	printf("total y angle: %.3f \n", *total_angle_y);
-	*total_angle_x = 0.98 *(*total_angle_x + *gyro_angle_x) + 0.02*(*acc_angle_x);
-	*total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
+//	*total_angle_x = 0.98 *(*total_angle_x + *gyro_angle_x) + 0.02*(*acc_angle_x);
+//	*total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
+	*total_angle_x = 0.96 *(*total_angle_x) + 0.02*(*gyro_angle_x) + 0.02*(*acc_angle_x);
+	*total_angle_y = 0.96 *(*total_angle_y) + 0.02*(*gyro_angle_y) + 0.02*(*acc_angle_y);
     printf("After Calculation:\ntotal x angle: %.3f \n", *total_angle_x);
     printf("total y angle: %.3f \n\r", *total_angle_y);
 }
