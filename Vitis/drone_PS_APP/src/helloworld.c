@@ -164,7 +164,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 			//time_us = start.tv_sec*1000000+start.tv_usec;
 			//*elapsed_time = (time_us-prev_time_us)/1000000;
 			//*elapsed_time = (start-stop)/1000.0;
-			*elapsed_time = 0.01;
+			*elapsed_time = 0.001;
 			//printf("elapsed time: %.2f \n", *elapsed_time);
 			*gyro_angle_x = *gyro_angle_x + (((*gyro_raw_x- drift_gyro_x)/gyro_div)-gyro_error_x)*(*elapsed_time) ;
 			*gyro_angle_y = *gyro_angle_y + (((*gyro_raw_y- drift_gyro_y)/gyro_div )-gyro_error_y)*(*elapsed_time);
