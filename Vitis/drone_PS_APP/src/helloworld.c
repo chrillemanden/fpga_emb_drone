@@ -108,7 +108,8 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 {
 	static float gyro_error_x = 0.0, gyro_error_y = 0.0;
 	static int i = 0, gyro_error = 0;
-	static float prev_gyro = 0.0;
+	static float prev_gyro_y = 0.0, prev_gyro_x = 0.0;
+	static float drift_gyro_y = 0.0, drift_gyro_x = 0.0;
 	//struct timeval stop, start;
 	clock_t stop, start;
 	//static float prev_time_us, time_us = 0;
@@ -120,7 +121,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 //		xil_printf("group 1\n\r");
 		gyro_error_x = *gyro_raw_x/gyro_div;
 		gyro_error_y = *gyro_raw_y/gyro_div;
-		if (prev_gyro != *gyro_raw_y)
+		if (prev_gyro_y != *gyro_raw_y)
 		{
 //			xil_printf("group 2\n");
 //			printf("Gyro x angle: %.2f \n", *gyro_angle_x);
@@ -128,9 +129,12 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 			xil_printf("i = %d \n\r", i);
 			if (i<199)
 			{
-				prev_gyro = *gyro_raw_y;
+				drift_gyro_x = (gyro_raw_x-prev_gyro_x)/gyro_div;
+				drift_gyro_y = (gyro_raw_y-prev_gyro_y)/gyro_div;
 				gyro_error_x = gyro_error_x + *gyro_raw_x/gyro_div;
 				gyro_error_y = gyro_error_y + *gyro_raw_y/gyro_div;
+				prev_gyro_y = *gyro_raw_y;
+				prev_gyro_x = *gyro_raw_x;
 				i++;	
 			}
 			else if (i == 199)
@@ -139,8 +143,8 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 				stop = clock();
 				//gettimeofday(&start, NULL);
 				//prev_time_us = start.tv_sec*1000000+start.tv_usec;
-				gyro_error_x = (gyro_error_x + *gyro_raw_x/gyro_div)/200;
-				gyro_error_y = (gyro_error_y + *gyro_raw_y/gyro_div)/200;
+				gyro_error_x = (gyro_error_x + *gyro_raw_x/gyro_div)/200 - drift_gyro_x;
+				gyro_error_y = (gyro_error_y + *gyro_raw_y/gyro_div)/200 - drift_gyro_y;
 				gyro_error = 1;
 			}
 			
