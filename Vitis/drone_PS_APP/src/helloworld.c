@@ -67,7 +67,7 @@ int main()
 		  //signed_acc_data = mem_value;
 		  //xil_printf("Memory value %d for addr %d.\r\n", signed_acc_data, addr_value);
 
-	  acc_raw_x = MYMEM_u(0);
+	  	acc_raw_x = MYMEM_u(0);
 		acc_raw_y = MYMEM_u(1);
 		acc_raw_z = MYMEM_u(2);
 		gyro_raw_x = MYMEM_u(3);
@@ -81,19 +81,19 @@ int main()
 //		xil_printf("gyro z: %d \n\r", gyro_raw_z);
 
 		//xil_printf("before calc_gyro_ang\n\r");
-		calc_gyro_ang(&gyro_raw_x, &gyro_raw_y, &gyro_angle_x, &gyro_angle_y, &elapsed_time);
+		//calc_gyro_ang(&gyro_raw_x, &gyro_raw_y, &gyro_angle_x, &gyro_angle_y, &elapsed_time);
 		//xil_printf("before calc_acc_ang\n\r");
 		calc_acc_ang(&acc_raw_x, &acc_raw_y, &acc_raw_z, &acc_angle_x, &acc_angle_y);
 		//xil_printf("before calc_total_ang\n\r");
-		printf("Before calling total-angle-function:\nGyro x angle: %.2f \n", gyro_angle_x);
-		printf("Gyro y angle: %.2f \n\r", gyro_angle_y);
+		//printf("Before calling total-angle-function:\nGyro x angle: %.2f \n", gyro_angle_x);
+		//printf("Gyro y angle: %.2f \n\r", gyro_angle_y);
 		calc_total_ang(&gyro_angle_x, &gyro_angle_y, &acc_angle_x, &acc_angle_y, &total_angle_x, &total_angle_y);
 		//xil_printf("before calc_pwm\n\r");
 		calc_pwm(total_angle_x, total_angle_y, &pwm_RF, &pwm_RB, &pwm_LF, &pwm_LB, elapsed_time);
 		//xil_printf("total x angle: %d \n\r", total_angle_x);
 	    //xil_printf("total y angle: %d \n\r", total_angle_y);
 
-	  usleep(10000);
+	  usleep(1000);
 
 
   } //end while loop
@@ -129,8 +129,8 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 			xil_printf("i = %d \n\r", i);
 			if (i<199)
 			{
-				drift_gyro_x = (gyro_raw_x-prev_gyro_x)/gyro_div;
-				drift_gyro_y = (gyro_raw_y-prev_gyro_y)/gyro_div;
+				drift_gyro_x = drift_gyro_x + (*gyro_raw_x-prev_gyro_x);
+				drift_gyro_y = drift_gyro_y + (*gyro_raw_y-prev_gyro_y);
 				gyro_error_x = gyro_error_x + *gyro_raw_x/gyro_div;
 				gyro_error_y = gyro_error_y + *gyro_raw_y/gyro_div;
 				prev_gyro_y = *gyro_raw_y;
@@ -143,8 +143,10 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 				stop = clock();
 				//gettimeofday(&start, NULL);
 				//prev_time_us = start.tv_sec*1000000+start.tv_usec;
-				gyro_error_x = (gyro_error_x + *gyro_raw_x/gyro_div)/200 - drift_gyro_x;
-				gyro_error_y = (gyro_error_y + *gyro_raw_y/gyro_div)/200 - drift_gyro_y;
+				drift_gyro_x = (drift_gyro_x + (*gyro_raw_x-prev_gyro_x))/200;
+				drift_gyro_y = (drift_gyro_y + (*gyro_raw_y-prev_gyro_y))/200;
+				gyro_error_x = (gyro_error_x + *gyro_raw_x/gyro_div)/200;
+				gyro_error_y = (gyro_error_y + *gyro_raw_y/gyro_div)/200;
 				gyro_error = 1;
 			}
 			
@@ -152,9 +154,9 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 	}
 	else
 	{
-		if (prev_gyro != *gyro_raw_y)
+		if (prev_gyro_y != *gyro_raw_y)
 		{
-			prev_gyro = *gyro_raw_y;
+			prev_gyro_y = *gyro_raw_y;
 			//gettimeofday(&start, NULL);
 			start = clock();
 			//printf("start time: %.2f \n", start);
@@ -164,8 +166,8 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 			//*elapsed_time = (start-stop)/1000.0;
 			*elapsed_time = 0.01;
 			//printf("elapsed time: %.2f \n", *elapsed_time);
-			*gyro_angle_x = *gyro_angle_x + ((*gyro_raw_x/gyro_div)-gyro_error_x)*(*elapsed_time);
-			*gyro_angle_y = *gyro_angle_y + ((*gyro_raw_y/gyro_div)-gyro_error_y)*(*elapsed_time);
+			*gyro_angle_x = *gyro_angle_x + (((*gyro_raw_x- drift_gyro_x)/gyro_div)-gyro_error_x)*(*elapsed_time) ;
+			*gyro_angle_y = *gyro_angle_y + (((*gyro_raw_y- drift_gyro_y)/gyro_div )-gyro_error_y)*(*elapsed_time);
 			stop = start;
 //			printf("gyro x: %d \n", *gyro_raw_x);
 //			printf("gyro y: %d \n", *gyro_raw_y);
@@ -185,6 +187,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, float* acc_angle_x, float* acc_angle_y)
 {
 	static float acc_error_x = 0.0, acc_error_y = 0.0;
+	static float acc_div_x = 0.0, acc_div_y = 0.0, acc_div_z = 0.0;
 	static int i = 0, acc_error = 0;
 	static float prev_acc = 0.0;
 	//Initial value for accelerometer
@@ -193,8 +196,9 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 
 	if (acc_error == 0)
 	{
-		acc_error_x = *acc_raw_x/acc_div;
-		acc_error_y = *acc_raw_y/acc_div;
+		acc_div_x = *acc_raw_x/acc_div;
+		acc_div_y = *acc_raw_y/acc_div;
+		acc_div_z = *acc_raw_z/acc_div;
 //		printf("*acc_raw_x: %d \n", *acc_raw_x);
 //		printf("acc_error x: %.2f \n", test);
 //		printf("acc_error x: %.2f \n", acc_error_x);
@@ -203,14 +207,20 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 		if (prev_acc != *acc_raw_z)
 		{
 			prev_acc = *acc_raw_z;
-			acc_error_x = acc_error_x + (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI));
-			acc_error_y = acc_error_y + (atan(-1*(*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI));
+			acc_error_x = acc_error_x + (atan((acc_div_y)/sqrt(acc_div_x*(acc_div_x) + acc_div_z*(acc_div_z)))*(180/PI));
+			acc_error_y = acc_error_y + (atan(-1*(acc_div_x)/sqrt(acc_div_y*(acc_div_y) + acc_div_z*(acc_div_z)))*(180/PI));
+//			acc_error_x = acc_error_x + (atan2((acc_div_y), sqrt(acc_div_x*(acc_div_x) + acc_div_z*(acc_div_z)))*(180/PI));
+//			acc_error_y = acc_error_y + (atan2(-1*(acc_div_x), sqrt(acc_div_y*(acc_div_y) + acc_div_z*(acc_div_z)))*(180/PI));
+
 			if (i == 199)
 			{
 				acc_error_x = acc_error_x/200;
 				acc_error_y = acc_error_y/200;
 				acc_error = 1;
 			}
+//			printf("Inside acc function:\nacc_error_x: %.2f \n", acc_error_x);
+//			printf("acc_error_y: %2f \n", acc_error_y);
+//			printf("acc_cal_x: %2f \n\r", (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI)));
 			i++;
 			
 		}
@@ -219,12 +229,17 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 	{
 		if (prev_acc != *acc_raw_y)
 		{
+			acc_div_x = *acc_raw_x/acc_div;
+			acc_div_y = *acc_raw_y/acc_div;
+			acc_div_z = *acc_raw_z/acc_div;
 			prev_acc = *acc_raw_y;
-			*acc_angle_x = (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI)) - acc_error_x;
-			*acc_angle_y = (atan(-1*(*acc_raw_x)/sqrt(*acc_raw_y*(*acc_raw_y) + *acc_raw_z*(*acc_raw_z)))*(180/PI)) - acc_error_y;
-			printf("Inside acc function:\nacc_error_x: %.2f \n", acc_error_x);
-			printf("acc_error_y: %2f \n\r", acc_error_y);
-			//printf("acc x angle: %.3f \n", *acc_angle_x);
+//			*acc_angle_x = (atan2((acc_div_y), sqrt(acc_div_x*(acc_div_x) + acc_div_z*(acc_div_z)))*(180/PI)) - acc_error_x;
+//			*acc_angle_y = (atan2((acc_div_x), sqrt(acc_div_y*(acc_div_y) + acc_div_z*(acc_div_z)))*(180/PI)) - acc_error_y;
+			*acc_angle_x = (atan((acc_div_y)/sqrt(acc_div_x*(acc_div_x) + acc_div_z*(acc_div_z)))*(180/PI)) - acc_error_x;
+			*acc_angle_y = (atan(-1*(acc_div_x)/sqrt(acc_div_y*(acc_div_y) + acc_div_z*(acc_div_z)))*(180/PI)) - acc_error_y;
+//			printf("Inside acc function:\nacc_error_x: %.2f \n", acc_error_x);
+//			printf("acc_error_y: %2f \n\r", acc_error_y);
+//			printf("acc x angle: %.3f \n", *acc_angle_x);
 //			printf("acc y angle: %.3f \n\r", *acc_angle_y);
 		}
 	}
@@ -233,14 +248,16 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 
 void calc_total_ang(float *gyro_angle_x, float *gyro_angle_y, float *acc_angle_x, float *acc_angle_y, float* total_angle_x, float* total_angle_y)
 {
-	printf("Gyro x angle: %.2f \n", *gyro_angle_x);
-	printf("Gyro y angle: %.2f \n", *gyro_angle_y);
-	printf("acc x angle: %.3f \n", *acc_angle_x);
-	printf("acc y angle: %.3f \n", *acc_angle_y);
-	printf("total x angle: %.3f \n", *total_angle_x);
-	printf("total y angle: %.3f \n", *total_angle_y);
-	*total_angle_x = 0.98 *(*total_angle_x + *gyro_angle_x) + 0.02*(*acc_angle_x);
-	*total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
+//	printf("Gyro x angle: %.2f \n", *gyro_angle_x);
+//	printf("Gyro y angle: %.2f \n", *gyro_angle_y);
+//	printf("acc x angle: %.3f \n", *acc_angle_x);
+//	printf("acc y angle: %.3f \n", *acc_angle_y);
+//	printf("total x angle: %.3f \n", *total_angle_x);
+//	printf("total y angle: %.3f \n", *total_angle_y);
+//	*total_angle_x = 0.98 *(*total_angle_x + *gyro_angle_x) + 0.02*(*acc_angle_x);
+//	*total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
+	*total_angle_x = 0.97 *(*total_angle_x) + 0.03*(*acc_angle_x); //+ 0.02*(*gyro_angle_x);
+	*total_angle_y = 0.97 *(*total_angle_y) + 0.03*(*acc_angle_y); //+ 0.02*(*gyro_angle_y);
     printf("After Calculation:\ntotal x angle: %.3f \n", *total_angle_x);
     printf("total y angle: %.3f \n\r", *total_angle_y);
 }
