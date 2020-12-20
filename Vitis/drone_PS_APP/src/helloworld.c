@@ -23,8 +23,8 @@
 //#define acc_div 16384
 #define PI 3.14159265359
 #define kp 1
-#define ki 1
-#define kd 1
+#define ki 0.001
+#define kd 0.01
 //#define MAXMEM	   ((ConfigPtr->MemHighAddress-ConfigPtr->MemBaseAddress)+1)/sizeof(u32)
 
 XBram Bram;
@@ -46,8 +46,6 @@ int main()
 	int8_t signed_acc_data = 0;
 	int16_t gyro_raw_x, gyro_raw_y, gyro_raw_z, acc_raw_x, acc_raw_y, acc_raw_z = 0;
 	float gyro_angle_x = 0.0, gyro_angle_y = 0.0, acc_angle_x = 0.0, acc_angle_y = 0.0, total_angle_x = 0.0, total_angle_y = 0.0;
-
-	float pwm_RF = 0.0, pwm_RB = 0.0, pwm_LF = 0.0, pwm_LB = 0.0;
 	float elapsed_time = 0.0;
 //	printf("Gyro x angle: %.2f \n", gyro_angle_x);
 //	printf("Gyro y angle: %.2f \n", gyro_angle_y);
@@ -73,15 +71,15 @@ int main()
 		gyro_raw_x = MYMEM_u(3);
 		gyro_raw_y = MYMEM_u(4);
 		gyro_raw_z = MYMEM_u(5);
-//		xil_printf("acc x: %d \n", acc_raw_x);
-//		xil_printf("acc y: %d \n", acc_raw_y);
-//		xil_printf("acc z: %d \n", acc_raw_z);
-//		xil_printf("gyro x: %d \n", gyro_raw_x);
-//		xil_printf("gyro y: %d \n", gyro_raw_y);
-//		xil_printf("gyro z: %d \n\r", gyro_raw_z);
+//		printf("acc x: %d \n", acc_raw_x);
+//		printf("acc y: %d \n", acc_raw_y);
+//		printf("acc z: %d \n", acc_raw_z);
+//		printf("gyro x: %d \n", gyro_raw_x);
+//		printf("gyro y: %d \n", gyro_raw_y);
+//		printf("gyro z: %d \n\r", gyro_raw_z);
 
 		//xil_printf("before calc_gyro_ang\n\r");
-		//calc_gyro_ang(&gyro_raw_x, &gyro_raw_y, &gyro_angle_x, &gyro_angle_y, &elapsed_time);
+		calc_gyro_ang(&gyro_raw_x, &gyro_raw_y, &gyro_angle_x, &gyro_angle_y, &elapsed_time);
 		//xil_printf("before calc_acc_ang\n\r");
 		calc_acc_ang(&acc_raw_x, &acc_raw_y, &acc_raw_z, &acc_angle_x, &acc_angle_y);
 		//xil_printf("before calc_total_ang\n\r");
@@ -89,7 +87,8 @@ int main()
 		//printf("Gyro y angle: %.2f \n\r", gyro_angle_y);
 		calc_total_ang(&gyro_angle_x, &gyro_angle_y, &acc_angle_x, &acc_angle_y, &total_angle_x, &total_angle_y);
 		//xil_printf("before calc_pwm\n\r");
-		calc_pwm(total_angle_x, total_angle_y, &pwm_RF, &pwm_RB, &pwm_LF, &pwm_LB, elapsed_time);
+//		printf("angle y before: %2f \n\r", total_angle_y);
+		calc_pwm(&total_angle_x, &total_angle_y);
 		//xil_printf("total x angle: %d \n\r", total_angle_x);
 	    //xil_printf("total y angle: %d \n\r", total_angle_y);
 
@@ -135,7 +134,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 				gyro_error_y = gyro_error_y + *gyro_raw_y/gyro_div;
 				prev_gyro_y = *gyro_raw_y;
 				prev_gyro_x = *gyro_raw_x;
-				i++;	
+				i++;
 			}
 			else if (i == 199)
 			{
@@ -149,7 +148,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 				gyro_error_y = (gyro_error_y + *gyro_raw_y/gyro_div)/200;
 				gyro_error = 1;
 			}
-			
+
 		}
 	}
 	else
@@ -168,6 +167,7 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 			//printf("elapsed time: %.2f \n", *elapsed_time);
 			*gyro_angle_x = *gyro_angle_x + (((*gyro_raw_x- drift_gyro_x)/gyro_div)-gyro_error_x)*(*elapsed_time) ;
 			*gyro_angle_y = *gyro_angle_y + (((*gyro_raw_y- drift_gyro_y)/gyro_div )-gyro_error_y)*(*elapsed_time);
+//			printf("Elapsed time: %2f \n", (start-stop)/1000.0);
 			stop = start;
 //			printf("gyro x: %d \n", *gyro_raw_x);
 //			printf("gyro y: %d \n", *gyro_raw_y);
@@ -176,12 +176,12 @@ void calc_gyro_ang(int16_t *gyro_raw_x, int16_t *gyro_raw_y, float* gyro_angle_x
 ////			xil_printf("gyro_div: %d \n\r", 131);
 //			printf("Gyro error x: %.2f \n", gyro_error_x);
 //			printf("Gyro error y: %.2f \n", gyro_error_y);
-			printf("In Gyro-Angle function:\nGyro x angle: %.2f \n", *gyro_angle_x);
-			printf("Gyro y angle: %.2f \n\r", *gyro_angle_y);
+//			printf("In Gyro-Angle function:\nGyro x angle: %.2f \n", *gyro_angle_x);
+//			printf("Gyro y angle: %.2f \n\r", *gyro_angle_y);
 		}
 
 	}
-	
+
 }
 
 void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, float* acc_angle_x, float* acc_angle_y)
@@ -222,7 +222,7 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 //			printf("acc_error_y: %2f \n", acc_error_y);
 //			printf("acc_cal_x: %2f \n\r", (atan((*acc_raw_y)/sqrt(*acc_raw_x*(*acc_raw_x) + *acc_raw_z*(*acc_raw_z)))*(180/PI)));
 			i++;
-			
+
 		}
 	}
 	else
@@ -243,23 +243,11 @@ void calc_acc_ang(int16_t *acc_raw_x, int16_t *acc_raw_y, int16_t *acc_raw_z, fl
 //			printf("acc y angle: %.3f \n\r", *acc_angle_y);
 		}
 	}
-	
+
 }
 
 void calc_total_ang(float *gyro_angle_x, float *gyro_angle_y, float *acc_angle_x, float *acc_angle_y, float* total_angle_x, float* total_angle_y)
 {
-
-	// printf("Gyro x angle: %.2f \n", *gyro_angle_x);
-	// printf("Gyro y angle: %.2f \n", *gyro_angle_y);
-	// printf("acc x angle: %.3f \n", *acc_angle_x);
-	// printf("acc y angle: %.3f \n", *acc_angle_y);
-	// printf("total x angle: %.3f \n", *total_angle_x);
-	// printf("total y angle: %.3f \n", *total_angle_y);
-	// // *total_angle_x = 0.98 *(*total_angle_x + *gyro_angle_x) + 0.02*(*acc_angle_x);
-	// // *total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
-	// *total_angle_x = 0.96 *(*total_angle_x) + 0.02*(*gyro_angle_x) + 0.02*(*acc_angle_x);
-	// *total_angle_y = 0.96 *(*total_angle_y) + 0.02*(*gyro_angle_y) + 0.02*(*acc_angle_y);
-
 //	printf("Gyro x angle: %.2f \n", *gyro_angle_x);
 //	printf("Gyro y angle: %.2f \n", *gyro_angle_y);
 //	printf("acc x angle: %.3f \n", *acc_angle_x);
@@ -270,26 +258,30 @@ void calc_total_ang(float *gyro_angle_x, float *gyro_angle_y, float *acc_angle_x
 //	*total_angle_y = 0.98 *(*total_angle_y + *gyro_angle_y) + 0.02*(*acc_angle_y);
 	*total_angle_x = 0.97 *(*total_angle_x) + 0.03*(*acc_angle_x); //+ 0.02*(*gyro_angle_x);
 	*total_angle_y = 0.97 *(*total_angle_y) + 0.03*(*acc_angle_y); //+ 0.02*(*gyro_angle_y);
-
-    printf("After Calculation:\ntotal x angle: %.3f \n", *total_angle_x);
-    printf("total y angle: %.3f \n\r", *total_angle_y);
+//    printf("After Calculation:\ntotal x angle: %.3f \n", *total_angle_x);
+//    printf("total y angle: %.3f \n\r", *total_angle_y);
 }
 
-void calc_pwm(int16_t total_angle_x, int16_t total_angle_y, float* pwm_RF, float* pwm_RB, float* pwm_LF, float* pwm_LB, float elapsed_time)
+
+void calc_pwm(float *total_angle_x, float *total_angle_y)
 {
+//	printf("angle y after: %2f \n\r", *total_angle_y);
 	//xil_printf("group 1\n\r");
+	static float elapsed_time = 0.001;
+	static float i = 0;
 	static float roll_error = 0.0, pitch_error = 0.0, roll_previous_error = 0.0, pitch_previous_error = 0.0;
+	static float pwm_RF = 0.0, pwm_RB = 0.0, pwm_LF = 0.0, pwm_LB = 0.0;
 	static float roll_pid_p = 0.0, pitch_pid_p = 0.0, roll_pid_i = 0.0, pitch_pid_i = 0.0, roll_pid_d = 0.0, pitch_pid_d = 0.0, roll_PID = 0.0, pitch_PID = 0.0;
 
 	//xil_printf("group 2\n\r");
 	roll_previous_error = roll_error;
 	pitch_previous_error = pitch_error;
-	roll_error = total_angle_y - 0;
-    pitch_error = total_angle_x - 0;
+	roll_error = *total_angle_y;
+    pitch_error = *total_angle_x;
 
     //xil_printf("group 3\n\r");
 	roll_pid_p = kp*roll_error;
-    pitch_pid_p = kp*pitch_error; 
+    pitch_pid_p = kp*pitch_error;
 
     //xil_printf("group 4\n\r");
 	roll_pid_i = roll_pid_i+(ki*roll_error);
@@ -298,22 +290,71 @@ void calc_pwm(int16_t total_angle_x, int16_t total_angle_y, float* pwm_RF, float
 	//xil_printf("group 5\n\r");
 	roll_pid_d = kd*((roll_error - roll_previous_error)/elapsed_time);
 	pitch_pid_d = kd*((pitch_error - pitch_previous_error)/elapsed_time);
+//	printf("error-previous error: %2f \n", (roll_error - roll_previous_error));
+//	printf("elapsed time: %2f \n", elapsed_time);
 
 //	xil_printf("group 6\n\r");
 	roll_PID = roll_pid_p + roll_pid_i + roll_pid_d;
     pitch_PID = pitch_pid_p + pitch_pid_i + pitch_pid_d;
 
+
 //    xil_printf("group 7\n\r");
-//	*pwm_RF = -roll_PID - pitch_PID;
-//	*pwm_RB = -roll_PID + pitch_PID;
-//	*pwm_LF = roll_PID - pitch_PID;
-//	*pwm_LB = roll_PID + pitch_PID;
-//
-//	xil_printf("in calc_pwm before ifs\n\r");
-//	if(*pwm_RF < 0){*pwm_RF = 0;}
-//	if(*pwm_RB < 0){*pwm_RB = 0;}
-//	if(*pwm_LF < 0){*pwm_LF = 0;}
-//	if(*pwm_LB < 0){*pwm_LB = 0;}
+	pwm_RF = (-roll_PID - pitch_PID)+60;
+	pwm_RB = (-roll_PID + pitch_PID)+60;
+	pwm_LF = (roll_PID - pitch_PID)+60;
+	pwm_LB = (roll_PID + pitch_PID)+60;
+
+//	printf("in calc_pwm before ifs\n\r");
+	if(pwm_RF < 60){pwm_RF = 60;}
+	if(pwm_RB < 60){pwm_RB = 60;}
+	if(pwm_LF < 60){pwm_LF = 60;}
+	if(pwm_LB < 60){pwm_LB = 60;}
+	if(pwm_RF > 102){pwm_RF = 102;}
+	if(pwm_RB > 102){pwm_RB = 102;}
+	if(pwm_LF > 102){pwm_LF = 102;}
+	if(pwm_LB > 102){pwm_LB = 102;}
+
+	int test = 0;
+	int test2 = 2;
+	test = (test2 << 2) & 2;
+//	printf("Test af shift bit: %d", test);
+	if (i < 300)
+	{
+		i++;
+		MYMEM_u(6) = 52; //S�t til ARM v�rdi
+		MYMEM_u(7) = 52;
+		MYMEM_u(8) = 52;
+		MYMEM_u(9) = 52;
+	}
+	else
+	{
+//		MYMEM_u(6) = (int)pwm_LB;
+//		MYMEM_u(7) = (int)pwm_RB;
+//		MYMEM_u(8) = (int)pwm_LF;
+		MYMEM_u(9) = (int)pwm_RF;
+//		MYMEM_u(6) = 80; //S�t til ARM v�rdi
+//		MYMEM_u(7) = 80;
+//		MYMEM_u(8) = 80;
+//		MYMEM_u(9) = 80;
+	}
+
+//	MYMEM_u(6) = 52;
+//	MYMEM_u(7) = 52;
+//	MYMEM_u(8) = 52;
+//	MYMEM_u(9) = 52;
+
+//	printf("roll_p: %2f \n", roll_pid_p);
+
+//	printf("roll_d: %2f \n", roll_pid_d);
+//	printf("roll_i: %2f \n\r", roll_pid_i);
+//	int16_t test = MYMEM_u(9);
+//	printf("pwm_RB: %8d \n", (int)pwm_RB);
+	printf("From bram 6: %8d \n", MYMEM_u(6));
+//	printf("From bram 7: %8d \n", MYMEM_u(7));
+//	printf("From bram 8: %8d \n", MYMEM_u(8));
+//	printf("From bram 9: %8d \n\r", MYMEM_u(9));
+//	printf("pwm_LF: %2f \n", pwm_LF);
+//	printf("pwm_LB: %2f \n\r", pwm_LB);
 }
 /*
  * This function initializes the BRAM driver. If an error occurs then exit
